@@ -31,6 +31,18 @@ public class Constants {
 	public static final String STATE_FRUIT_EXCELENT = "FRESH_FRUIT";
 	public static final String STATE_FRUIT_BAD = "BAD_FRUIT";
 	
+	//Headers for table
+	public static final String H_ID_DEPARTMENT= "H_ID_DEPARTMENT";
+	public static final String H_DEPARTMENT= "H_DEPARTMENT";
+	public static final String H_ID_TOWN= "H_ID_TOWN";
+	public static final String H_TOWN= "H_TOWN";
+	public static final String H_SOWN_AREA= "H_SOWN_AREA";
+	public static final String H_HARVESTED_AREA= "H_HARVESTED_AREA";
+	public static final String H_PRODUCTION= "H_PRODUCTION";
+	public static final String H_PERFORMANCE= "H_PERFORMANCE";
+	public static final String H_PHYSICAL_STATE= "H_PHYSICAL_STATE";
+	public static final String H_PERIOD= "H_PERIOD";
+	
 	//Constants for Errors
 	public static final String FILE_NOT_FOUND = "ERROR_NAME_FILE_CONFIG";
 	public static final String ERROR_BY_ZERO = "ERROR_BY_ZERO";
