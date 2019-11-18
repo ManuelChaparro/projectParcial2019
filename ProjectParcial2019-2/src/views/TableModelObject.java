@@ -12,11 +12,12 @@ public class TableModelObject extends JTable{
 	private DefaultTableModel model;
 	
 	public TableModelObject(Object[][] data) {
+//		model = new DefaultTableModel(null, null);
 		changeLenguage();
 	}
 
 	private void changeLenguage() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
