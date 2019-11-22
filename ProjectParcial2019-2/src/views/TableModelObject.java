@@ -1,10 +1,7 @@
 package views;
 
-import java.awt.Color;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-
-import handler.HandlerLanguage;
 
 public class TableModelObject extends JTable {
 
