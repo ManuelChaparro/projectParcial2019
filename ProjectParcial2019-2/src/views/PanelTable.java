@@ -36,7 +36,7 @@ public class PanelTable extends JPanel{
 		table.setBackground(Color.GRAY);
 		table.setBackground(Color.WHITE);
 		table.setFont(Constants.DEFAULT_FONT);
-		table.getTableHeader().setFont(Constants.DEFAULT_FONT_MAX);
+		table.getTableHeader().setFont(Constants.DEFAULT_FONT);
 		table.setEditingRow(500);
 		table.getColumnModel().getColumn(0).setPreferredWidth(5);
 		table.setRowHeight(25);
@@ -48,7 +48,7 @@ public class PanelTable extends JPanel{
 	}
 
 	public void setNewAvocado(Object[] data) {
-		
+		tableModel.addRow(data);
 	}
 	
 	private Object[] generateHeader() {
@@ -65,7 +65,7 @@ public class PanelTable extends JPanel{
 		return HEADERS;
 	}
 
-	private void changeLenguage() {
+	public void changeLenguage() {
 		String[] HEADERS = { HandlerLanguage.languageProperties.getProperty(Constants.H_ID_DEPARTMENT),
 				HandlerLanguage.languageProperties.getProperty(Constants.H_DEPARTMENT),
 				HandlerLanguage.languageProperties.getProperty(Constants.H_ID_TOWN),

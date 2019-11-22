@@ -30,7 +30,7 @@ public class PrincipalPanel extends JPanel{
 
 	public void changeLanguage() {
 		north.changeLanguage();
-		
+		center.changeLenguage();
 	}
 
 	public void setNewAvocado(Object[] data) {

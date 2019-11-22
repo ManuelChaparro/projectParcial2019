@@ -81,8 +81,8 @@ public class Controller implements ActionListener {
 					(int) newAvocado[6],(int) newAvocado[7], (String) newAvocado[8],
 					(int)newAvocado[9]);
 			Object[] data = avocado.toMatrixObject(avocado);
-			System.out.println(data);
 			window.setNewAvocadoInTable(data);
+			newFileDialog.clearData();
 		}
 		
 	}
