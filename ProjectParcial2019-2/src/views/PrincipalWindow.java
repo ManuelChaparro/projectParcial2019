@@ -43,4 +43,9 @@ public class PrincipalWindow extends JFrame{
 		
 	}
 
+	public void setNewAvocadoInTable(Object[] data) {
+		principalPanelObject.setNewAvocado(data);
+		
+	}
+
 }

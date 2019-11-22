@@ -260,4 +260,53 @@ public class NewFileContainer extends JPanel{
 		performance.setText(performanceString);
 	}
 
+	public Object[] getDataAvocado() {
+		int idDepartment =0;
+		int idTown = 0;
+		int sownArea = 0;
+		int harvestedArea = 0;
+		int production = 0;
+		int performance = 0;
+		int period = 0;
+		String department = "";
+		String town = "";
+		String physicalState = "";
+		try {
+			idDepartment = Integer.parseInt(this.idDepartment.getText());
+			department = (String) departaments.getSelectedItem();
+			idTown = Integer.parseInt(this.idTown.getText());
+			town = this.town.getText();
+			sownArea = Integer.parseInt(this.sownArea.getText());
+			harvestedArea = Integer.parseInt(this.harvestedArea.getText());
+			production = Integer.parseInt(this.production.getText());
+			performance = Integer.parseInt(this.performance.getText());
+			physicalState = (String) this.physicalState.getSelectedItem();
+			period = (int) this.period.getValue();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return new Object[] {idDepartment, department, idTown, town,
+				sownArea, harvestedArea, production, performance, physicalState, period};
+	}
+
+	public void clearData() {
+		idTown.setText("");
+		town.setText("");
+		sownArea.setText("");
+		harvestedArea.setText("");
+		production.setText("");
+		performance.setText("");
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+

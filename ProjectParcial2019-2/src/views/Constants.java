@@ -47,6 +47,7 @@ public class Constants {
 	public static final String FILE_NOT_FOUND = "ERROR_NAME_FILE_CONFIG";
 	public static final String ERROR_BY_ZERO = "ERROR_BY_ZERO";
 	public static final String ERROR_TO_INT = "ERROR_TO_INT";
+	public static final Object ERROR_AREA = "ERROR_AREA";
 	
 	//Constants for paths
 	public static final String PATH_ICON_FRAME = "/resource/iconFrame.png";

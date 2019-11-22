@@ -65,8 +65,14 @@ public class Avocado {
 	public int getIdDepartment() {
 		return idDepartment;
 	}
+	public String getDepartment() {
+		return department;
+	}
 	public int getIdTown() {
 		return idTown;
+	}
+	public String getTown() {
+		return town;
 	}
 	public int getSownArea() {
 		return sownArea;
@@ -77,11 +83,22 @@ public class Avocado {
 	public int getProduction() {
 		return production;
 	}
+	public String getPhysicalState() {
+		return physicalState;
+	}
 	public int getPerformance() {
 		return performance;
 	}
 	public int getPeriod() {
 		return period;
+	}
+	
+	public Object[] toMatrixObject(Avocado avocado) {
+		return new Object[] {avocado.getIdDepartment(), avocado.department,
+				avocado.getIdTown(), avocado.getTown(), avocado.getSownArea(),
+				avocado.getHarvestedArea(), avocado.getProduction(),
+				avocado.getPerformance(), avocado.getPhysicalState(),
+				avocado.getPeriod()};
 	}
 
 }

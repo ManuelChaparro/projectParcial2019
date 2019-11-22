@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import handler.HandlerLanguage;
+import models.Avocado;
 import models.Calculations;
 
 public class Controller implements ActionListener {
@@ -15,6 +16,7 @@ public class Controller implements ActionListener {
 	private NewFileDialog newFileDialog;
 	private ViewsUtilities viewsUtilities;
 	private Calculations calculations;
+	private Avocado avocado;
 
 	public Controller() {
 		viewsUtilities = new ViewsUtilities();
@@ -54,17 +56,35 @@ public class Controller implements ActionListener {
 			break;
 			
 		case ACCEPT_BUTTON:
-			System.out.println(1);
+			addNewAvocado();
+			newFileDialog.setVisible(false);
 			break;
 			
 		case CANCEL_BUTTON:
-			System.out.println(2);
+			newFileDialog.setVisible(false);
+			newFileDialog.clearData();
 			break;
 
 		default:
 			break;
 		}
 
+	}
+
+	private void addNewAvocado() {
+		Object[] newAvocado = newFileDialog.getDataAvocado();
+		if ((int) newAvocado[4] < (int) newAvocado[5]) {
+			viewsUtilities.showErrorArea();
+		}else {
+			avocado = new Avocado((int)newAvocado[0], (String) newAvocado[1],(int) newAvocado[2],
+					(String) newAvocado[3], (int) newAvocado[4],(int) newAvocado[5],
+					(int) newAvocado[6],(int) newAvocado[7], (String) newAvocado[8],
+					(int)newAvocado[9]);
+			Object[] data = avocado.toMatrixObject(avocado);
+			System.out.println(data);
+			window.setNewAvocadoInTable(data);
+		}
+		
 	}
 
 	private void calculatePerformance() {
