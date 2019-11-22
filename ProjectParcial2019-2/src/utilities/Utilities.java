@@ -25,7 +25,6 @@ public class Utilities {
 			if ( !isProxy ) {
 				httpURLConnection = (HttpURLConnection) url.openConnection();	
 				inputStream = httpURLConnection.getInputStream();
-				System.out.println(inputStream.read());
 			}else {
 				//Para funcionamiento dentro de la universidad
 				Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("172.16.0.73", 8080));

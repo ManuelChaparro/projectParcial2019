@@ -1,4 +1,1033 @@
 {
+  "meta" : {
+    "view" : {
+      "id" : "ddse-euqv",
+      "name" : "Cadena Productiva Aguacate - Area, Producción Y Rendimiento",
+      "attribution" : "Ministerio de Agricultura y Desarrollo Rural",
+      "attributionLink" : "http://www.agronet.gov.co",
+      "averageRating" : 0,
+      "category" : "Agricultura y Desarrollo Rural",
+      "createdAt" : 1495144279,
+      "description" : "Cadena Productiva Aguacate - Area, Producción Y Rendimiento",
+      "displayType" : "table",
+      "downloadCount" : 967,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1508347097,
+      "licenseId" : "CC_40_BY_SA",
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 27035023,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1508347008,
+      "publicationGroup" : 14218473,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1550805154,
+      "rowsUpdatedBy" : "h5ru-kk9w",
+      "tableId" : 14543422,
+      "totalTimesRated" : 0,
+      "viewCount" : 5945,
+      "viewLastModified" : 1550805282,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1508347008,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 835861,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1508347008,
+        "workflowId" : 2188,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "failureCount" : 0,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "h5ru-kk9w",
+          "displayName" : "Ministerio de Agricultura"
+        }
+      } ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 325458064,
+        "name" : "CÓD. DEP.",
+        "dataTypeName" : "number",
+        "fieldName" : "c_d_dep",
+        "position" : 1,
+        "renderTypeName" : "number",
+        "tableColumnId" : 47838743,
+        "width" : 208,
+        "cachedContents" : {
+          "largest" : "99",
+          "non_null" : 3966,
+          "average" : "40.48840141200202",
+          "null" : "0",
+          "top" : [ {
+            "item" : "5",
+            "count" : "235"
+          }, {
+            "item" : "25",
+            "count" : "136"
+          }, {
+            "item" : "68",
+            "count" : "125"
+          }, {
+            "item" : "76",
+            "count" : "111"
+          }, {
+            "item" : "41",
+            "count" : "105"
+          }, {
+            "item" : "52",
+            "count" : "104"
+          }, {
+            "item" : "54",
+            "count" : "84"
+          }, {
+            "item" : "15",
+            "count" : "76"
+          }, {
+            "item" : "17",
+            "count" : "75"
+          }, {
+            "item" : "73",
+            "count" : "75"
+          }, {
+            "item" : "20",
+            "count" : "51"
+          }, {
+            "item" : "50",
+            "count" : "40"
+          }, {
+            "item" : "66",
+            "count" : "39"
+          }, {
+            "item" : "19",
+            "count" : "38"
+          }, {
+            "item" : "63",
+            "count" : "36"
+          }, {
+            "item" : "44",
+            "count" : "30"
+          }, {
+            "item" : "13",
+            "count" : "24"
+          }, {
+            "item" : "85",
+            "count" : "24"
+          }, {
+            "item" : "81",
+            "count" : "16"
+          }, {
+            "item" : "27",
+            "count" : "13"
+          } ],
+          "smallest" : "5",
+          "not_null" : "1474",
+          "sum" : "160577",
+          "cardinality" : "29"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458065,
+        "name" : "DEPARTAMENTO",
+        "dataTypeName" : "text",
+        "fieldName" : "departamento",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 47838744,
+        "width" : 244,
+        "cachedContents" : {
+          "largest" : "VICHADA",
+          "non_null" : 3966,
+          "null" : "0",
+          "top" : [ {
+            "item" : "ANTIOQUIA",
+            "count" : "235"
+          }, {
+            "item" : "CUNDINAMARCA",
+            "count" : "136"
+          }, {
+            "item" : "SANTANDER",
+            "count" : "125"
+          }, {
+            "item" : "VALLE DEL CAUCA",
+            "count" : "111"
+          }, {
+            "item" : "HUILA",
+            "count" : "105"
+          }, {
+            "item" : "NARIÑO",
+            "count" : "104"
+          }, {
+            "item" : "NORTE DE SANTANDER",
+            "count" : "84"
+          }, {
+            "item" : "BOYACA",
+            "count" : "76"
+          }, {
+            "item" : "CALDAS",
+            "count" : "75"
+          }, {
+            "item" : "TOLIMA",
+            "count" : "75"
+          }, {
+            "item" : "CESAR",
+            "count" : "51"
+          }, {
+            "item" : "META",
+            "count" : "40"
+          }, {
+            "item" : "RISARALDA",
+            "count" : "39"
+          }, {
+            "item" : "CAUCA",
+            "count" : "38"
+          }, {
+            "item" : "QUINDIO",
+            "count" : "36"
+          }, {
+            "item" : "LA GUAJIRA",
+            "count" : "30"
+          }, {
+            "item" : "CASANARE",
+            "count" : "24"
+          }, {
+            "item" : "BOLIVAR",
+            "count" : "24"
+          }, {
+            "item" : "ARAUCA",
+            "count" : "16"
+          }, {
+            "item" : "CHOCO",
+            "count" : "13"
+          } ],
+          "smallest" : "AMAZONAS",
+          "not_null" : "1474",
+          "cardinality" : "29"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458066,
+        "name" : "CÓD. MUN.",
+        "dataTypeName" : "number",
+        "fieldName" : "c_d_mun",
+        "position" : 3,
+        "renderTypeName" : "number",
+        "tableColumnId" : 47838745,
+        "width" : 208,
+        "cachedContents" : {
+          "largest" : "99524",
+          "non_null" : 3966,
+          "average" : "40898.18078668684",
+          "null" : "0",
+          "top" : [ {
+            "item" : "15720",
+            "count" : "3"
+          }, {
+            "item" : "52405",
+            "count" : "3"
+          }, {
+            "item" : "5206",
+            "count" : "3"
+          }, {
+            "item" : "50223",
+            "count" : "3"
+          }, {
+            "item" : "5147",
+            "count" : "3"
+          }, {
+            "item" : "68872",
+            "count" : "3"
+          }, {
+            "item" : "41548",
+            "count" : "3"
+          }, {
+            "item" : "50330",
+            "count" : "3"
+          }, {
+            "item" : "50318",
+            "count" : "3"
+          }, {
+            "item" : "5240",
+            "count" : "3"
+          }, {
+            "item" : "63401",
+            "count" : "3"
+          }, {
+            "item" : "68209",
+            "count" : "3"
+          }, {
+            "item" : "19473",
+            "count" : "3"
+          }, {
+            "item" : "52381",
+            "count" : "3"
+          }, {
+            "item" : "5148",
+            "count" : "3"
+          }, {
+            "item" : "41396",
+            "count" : "3"
+          }, {
+            "item" : "20710",
+            "count" : "3"
+          }, {
+            "item" : "25299",
+            "count" : "3"
+          }, {
+            "item" : "17873",
+            "count" : "3"
+          }, {
+            "item" : "52411",
+            "count" : "3"
+          } ],
+          "smallest" : "5001",
+          "not_null" : "1474",
+          "sum" : "162202185",
+          "cardinality" : "511"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458067,
+        "name" : "MUNICIPIO",
+        "dataTypeName" : "text",
+        "fieldName" : "municipio",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 47838746,
+        "width" : 208,
+        "cachedContents" : {
+          "largest" : "ZIPACON",
+          "non_null" : 3966,
+          "null" : "0",
+          "top" : [ {
+            "item" : "LA UNION",
+            "count" : "9"
+          }, {
+            "item" : "GRANADA",
+            "count" : "9"
+          }, {
+            "item" : "SAN ANDRES",
+            "count" : "8"
+          }, {
+            "item" : "ARGELIA",
+            "count" : "7"
+          }, {
+            "item" : "RESTREPO",
+            "count" : "6"
+          }, {
+            "item" : "SAN FRANCISCO",
+            "count" : "6"
+          }, {
+            "item" : "GUADALUPE",
+            "count" : "6"
+          }, {
+            "item" : "EL PEÑON",
+            "count" : "6"
+          }, {
+            "item" : "VILLANUEVA",
+            "count" : "6"
+          }, {
+            "item" : "RIONEGRO",
+            "count" : "6"
+          }, {
+            "item" : "BUENAVISTA",
+            "count" : "6"
+          }, {
+            "item" : "SAN PEDRO",
+            "count" : "6"
+          }, {
+            "item" : "ALBAN",
+            "count" : "6"
+          }, {
+            "item" : "ARMENIA",
+            "count" : "6"
+          }, {
+            "item" : "TOLEDO",
+            "count" : "6"
+          }, {
+            "item" : "BOLIVAR",
+            "count" : "6"
+          }, {
+            "item" : "SABANALARGA",
+            "count" : "6"
+          }, {
+            "item" : "SANTUARIO",
+            "count" : "6"
+          }, {
+            "item" : "VENECIA",
+            "count" : "6"
+          }, {
+            "item" : "PALESTINA",
+            "count" : "6"
+          } ],
+          "smallest" : "ABEJORRAL",
+          "not_null" : "1474",
+          "cardinality" : "480"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458068,
+        "name" : "GRUPO DE CULTIVO",
+        "dataTypeName" : "text",
+        "fieldName" : "grupo_de_cultivo",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 47838747,
+        "width" : 292,
+        "cachedContents" : {
+          "largest" : "FRUTALES",
+          "non_null" : 3966,
+          "null" : "0",
+          "top" : [ {
+            "item" : "FRUTALES",
+            "count" : "1474"
+          } ],
+          "smallest" : "FRUTALES",
+          "not_null" : "1474",
+          "cardinality" : "1"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458069,
+        "name" : "SUBGRUPO DE CULTIVO",
+        "dataTypeName" : "text",
+        "fieldName" : "subgrupo_de_cultivo",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 47838748,
+        "width" : 328,
+        "cachedContents" : {
+          "largest" : "AGUACATE",
+          "non_null" : 3966,
+          "null" : "0",
+          "top" : [ {
+            "item" : "AGUACATE",
+            "count" : "1474"
+          } ],
+          "smallest" : "AGUACATE",
+          "not_null" : "1474",
+          "cardinality" : "1"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458070,
+        "name" : "CULTIVO",
+        "dataTypeName" : "text",
+        "fieldName" : "cultivo",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 47838749,
+        "width" : 184,
+        "cachedContents" : {
+          "largest" : "AGUACATE",
+          "non_null" : 3966,
+          "null" : "0",
+          "top" : [ {
+            "item" : "AGUACATE",
+            "count" : "1474"
+          } ],
+          "smallest" : "AGUACATE",
+          "not_null" : "1474",
+          "cardinality" : "1"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458071,
+        "name" : "DESAGREGACIÓN REGIONAL Y/O SISTEMA PRODUCTIVO",
+        "dataTypeName" : "text",
+        "fieldName" : "desagregaci_n_regional_y_o_sistema_productivo",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 47838750,
+        "width" : 640,
+        "cachedContents" : {
+          "largest" : "AGUACATE",
+          "non_null" : 3966,
+          "null" : "0",
+          "top" : [ {
+            "item" : "AGUACATE",
+            "count" : "1474"
+          } ],
+          "smallest" : "AGUACATE",
+          "not_null" : "1474",
+          "cardinality" : "1"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458072,
+        "name" : "CÓDIGO CULTIVO",
+        "dataTypeName" : "number",
+        "fieldName" : "c_digo_cultivo",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 47838751,
+        "width" : 268,
+        "cachedContents" : {
+          "largest" : "5010101",
+          "non_null" : 3966,
+          "average" : "112010030005",
+          "null" : "0",
+          "top" : [ {
+            "item" : "5010101",
+            "count" : "1474"
+          } ],
+          "smallest" : "5010101",
+          "not_null" : "1474",
+          "sum" : "444231778999830",
+          "cardinality" : "1"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458073,
+        "name" : "NOMBRE CIENTIFICO",
+        "dataTypeName" : "text",
+        "fieldName" : "nombre_cientifico",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 47838752,
+        "width" : 304,
+        "cachedContents" : {
+          "largest" : "PERSEA AMERICANA MILL.",
+          "non_null" : 3966,
+          "null" : "0",
+          "top" : [ {
+            "item" : "PERSEA AMERICANA MILL.",
+            "count" : "1474"
+          } ],
+          "smallest" : "PERSEA AMERICANA MILL.",
+          "not_null" : "1474",
+          "cardinality" : "1"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458074,
+        "name" : "PERIODO",
+        "dataTypeName" : "number",
+        "fieldName" : "periodo",
+        "position" : 11,
+        "renderTypeName" : "number",
+        "tableColumnId" : 47838753,
+        "width" : 184,
+        "cachedContents" : {
+          "largest" : "2018",
+          "non_null" : 3966,
+          "average" : "2012.643721633888",
+          "null" : "1",
+          "top" : [ {
+            "item" : "2017",
+            "count" : "498"
+          }, {
+            "item" : "2018",
+            "count" : "497"
+          }, {
+            "item" : "2016",
+            "count" : "478"
+          } ],
+          "smallest" : "2016",
+          "not_null" : "1473",
+          "sum" : "7982145",
+          "cardinality" : "3"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458075,
+        "name" : "Área Sembrada(ha)",
+        "dataTypeName" : "number",
+        "fieldName" : "rea_sembrada_ha",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 47838754,
+        "width" : 304,
+        "cachedContents" : {
+          "largest" : "6555",
+          "non_null" : 3966,
+          "average" : "115.7181038830055",
+          "null" : "0",
+          "top" : [ {
+            "item" : "5",
+            "count" : "41"
+          }, {
+            "item" : "20",
+            "count" : "38"
+          }, {
+            "item" : "15",
+            "count" : "37"
+          }, {
+            "item" : "7",
+            "count" : "34"
+          }, {
+            "item" : "30",
+            "count" : "32"
+          }, {
+            "item" : "33",
+            "count" : "32"
+          }, {
+            "item" : "10",
+            "count" : "32"
+          }, {
+            "item" : "4",
+            "count" : "29"
+          }, {
+            "item" : "2",
+            "count" : "29"
+          }, {
+            "item" : "3",
+            "count" : "29"
+          }, {
+            "item" : "6",
+            "count" : "26"
+          }, {
+            "item" : "16",
+            "count" : "21"
+          }, {
+            "item" : "12",
+            "count" : "21"
+          }, {
+            "item" : "9",
+            "count" : "19"
+          }, {
+            "item" : "35",
+            "count" : "18"
+          }, {
+            "item" : "1",
+            "count" : "18"
+          }, {
+            "item" : "13",
+            "count" : "17"
+          }, {
+            "item" : "21",
+            "count" : "17"
+          }, {
+            "item" : "19",
+            "count" : "17"
+          }, {
+            "item" : "11",
+            "count" : "17"
+          } ],
+          "smallest" : "0",
+          "not_null" : "1474",
+          "sum" : "458938",
+          "cardinality" : "337"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458076,
+        "name" : "Área Cosechada(ha)",
+        "dataTypeName" : "number",
+        "fieldName" : "rea_cosechada_ha",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 47838755,
+        "width" : 316,
+        "cachedContents" : {
+          "largest" : "6095",
+          "non_null" : 3966,
+          "average" : "79.28920827029753",
+          "null" : "0",
+          "top" : [ {
+            "item" : "0",
+            "count" : "85"
+          }, {
+            "item" : "5",
+            "count" : "61"
+          }, {
+            "item" : "3",
+            "count" : "50"
+          }, {
+            "item" : "10",
+            "count" : "44"
+          }, {
+            "item" : "1",
+            "count" : "40"
+          }, {
+            "item" : "4",
+            "count" : "40"
+          }, {
+            "item" : "2",
+            "count" : "40"
+          }, {
+            "item" : "7",
+            "count" : "35"
+          }, {
+            "item" : "12",
+            "count" : "30"
+          }, {
+            "item" : "8",
+            "count" : "30"
+          }, {
+            "item" : "30",
+            "count" : "29"
+          }, {
+            "item" : "15",
+            "count" : "27"
+          }, {
+            "item" : "25",
+            "count" : "25"
+          }, {
+            "item" : "20",
+            "count" : "25"
+          }, {
+            "item" : "6",
+            "count" : "24"
+          }, {
+            "item" : "18",
+            "count" : "24"
+          }, {
+            "item" : "14",
+            "count" : "24"
+          }, {
+            "item" : "13",
+            "count" : "22"
+          }, {
+            "item" : "9",
+            "count" : "22"
+          }, {
+            "item" : "17",
+            "count" : "19"
+          } ],
+          "smallest" : "0",
+          "not_null" : "1474",
+          "sum" : "314461",
+          "cardinality" : "280"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458077,
+        "name" : "Producción(t)",
+        "dataTypeName" : "number",
+        "fieldName" : "producci_n_t",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 47838756,
+        "width" : 256,
+        "cachedContents" : {
+          "largest" : "58146",
+          "non_null" : 3966,
+          "average" : "709.2927382753404",
+          "null" : "0",
+          "top" : [ {
+            "item" : "0",
+            "count" : "84"
+          }, {
+            "item" : "20",
+            "count" : "22"
+          }, {
+            "item" : "40",
+            "count" : "22"
+          }, {
+            "item" : "30",
+            "count" : "21"
+          }, {
+            "item" : "8",
+            "count" : "17"
+          }, {
+            "item" : "32",
+            "count" : "15"
+          }, {
+            "item" : "15",
+            "count" : "15"
+          }, {
+            "item" : "2",
+            "count" : "15"
+          }, {
+            "item" : "35",
+            "count" : "14"
+          }, {
+            "item" : "200",
+            "count" : "12"
+          }, {
+            "item" : "48",
+            "count" : "11"
+          }, {
+            "item" : "90",
+            "count" : "11"
+          }, {
+            "item" : "24",
+            "count" : "11"
+          }, {
+            "item" : "80",
+            "count" : "11"
+          }, {
+            "item" : "5",
+            "count" : "11"
+          }, {
+            "item" : "12",
+            "count" : "11"
+          }, {
+            "item" : "100",
+            "count" : "10"
+          }, {
+            "item" : "108",
+            "count" : "10"
+          }, {
+            "item" : "180",
+            "count" : "9"
+          }, {
+            "item" : "1",
+            "count" : "9"
+          } ],
+          "smallest" : "0",
+          "not_null" : "1474",
+          "sum" : "2813055",
+          "cardinality" : "580"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458078,
+        "name" : "Rendimiento(t/ha)",
+        "dataTypeName" : "number",
+        "fieldName" : "rendimiento_t_ha",
+        "position" : 15,
+        "renderTypeName" : "number",
+        "tableColumnId" : 47838757,
+        "width" : 304,
+        "cachedContents" : {
+          "largest" : "36",
+          "non_null" : 3624,
+          "average" : "8.554525386313466",
+          "null" : "0",
+          "top" : [ {
+            "item" : "10",
+            "count" : "154"
+          }, {
+            "item" : "4",
+            "count" : "129"
+          }, {
+            "item" : "8",
+            "count" : "120"
+          }, {
+            "item" : "5",
+            "count" : "119"
+          }, {
+            "item" : "6",
+            "count" : "112"
+          }, {
+            "item" : "12",
+            "count" : "109"
+          }, {
+            "item" : "7",
+            "count" : "84"
+          }, {
+            "item" : "0",
+            "count" : "81"
+          }, {
+            "item" : "15",
+            "count" : "56"
+          }, {
+            "item" : "3",
+            "count" : "54"
+          }, {
+            "item" : "9",
+            "count" : "46"
+          }, {
+            "item" : "2",
+            "count" : "36"
+          }, {
+            "item" : "20",
+            "count" : "24"
+          }, {
+            "item" : "4.5",
+            "count" : "21"
+          }, {
+            "item" : "11",
+            "count" : "19"
+          }, {
+            "item" : "14",
+            "count" : "18"
+          }, {
+            "item" : "13",
+            "count" : "17"
+          }, {
+            "item" : "8.5",
+            "count" : "14"
+          }, {
+            "item" : "1",
+            "count" : "13"
+          }, {
+            "item" : "7.5",
+            "count" : "12"
+          } ],
+          "smallest" : "0",
+          "not_null" : "1474",
+          "sum" : "31001.6",
+          "cardinality" : "114"
+        },
+        "format" : { }
+      }, {
+        "id" : 325458079,
+        "name" : "ESTADO FISICO PRODUCCION",
+        "dataTypeName" : "text",
+        "fieldName" : "estado_fisico_produccion",
+        "position" : 16,
+        "renderTypeName" : "text",
+        "tableColumnId" : 47838758,
+        "width" : 388,
+        "cachedContents" : {
+          "largest" : "FRUTO FRESCO",
+          "non_null" : 3966,
+          "null" : "0",
+          "top" : [ {
+            "item" : "FRUTO FRESCO",
+            "count" : "1474"
+          } ],
+          "smallest" : "FRUTO FRESCO",
+          "not_null" : "1474",
+          "cardinality" : "1"
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Creative Commons Attribution | Share Alike 4.0 International",
+        "logoUrl" : "images/licenses/cc30bysa.png",
+        "termsLink" : "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+      },
+      "metadata" : {
+        "jsonQuery" : {
+          "order" : [ {
+            "columnFieldName" : "periodo",
+            "ascending" : false
+          } ]
+        },
+        "custom_fields" : {
+          "Información de la Entidad" : {
+            "Municipio" : "Bogotá D.C.",
+            "Nombre de la Entidad" : "Ministerio de Agricultura y Desarrollo Rural",
+            "Orden" : "Nacional",
+            "Sector" : "Agricultura y Desarrollo Rural",
+            "Área o dependencia" : "Ministerio de Agricultura y Desarrollo Rural",
+            "Departamento" : "Bogotá D.C."
+          },
+          "Información de Datos" : {
+            "Cobertura Geográfica" : "Nacional",
+            "Idioma" : "Español",
+            "Frecuencia de Actualización" : "Anual",
+            "URL Documentación" : "",
+            "Fecha Emisión (aaaa-mm-dd)" : "2016-12-31",
+            "URL Normativa" : ""
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "h5ru-kk9w",
+        "displayName" : "Ministerio de Agricultura",
+        "profileImageUrlLarge" : "/api/users/h5ru-kk9w/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/h5ru-kk9w/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/h5ru-kk9w/profile_images/TINY",
+        "screenName" : "Ministerio de Agricultura",
+        "type" : "interactive"
+      },
+      "query" : {
+        "orderBys" : [ {
+          "ascending" : false,
+          "expression" : {
+            "columnId" : 325458074,
+            "type" : "column"
+          }
+        } ]
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "h5ru-kk9w",
+        "displayName" : "Ministerio de Agricultura",
+        "profileImageUrlLarge" : "/api/users/h5ru-kk9w/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/h5ru-kk9w/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/h5ru-kk9w/profile_images/TINY",
+        "screenName" : "Ministerio de Agricultura",
+        "type" : "interactive"
+      },
+      "tags" : [ "cadena productiva aguacate - area", "producción y rendimiento" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
   "data" : [ [ "row-3fkq-gqyq-2fr5", "00000000-0000-0000-9EF2-033C728359B5", 0, 1550805154, null, 1550805154, null, "{ }", "5", "ANTIOQUIA", "5847", "URRAO", "FRUTALES", "AGUACATE", "AGUACATE", "AGUACATE", "5010101", "PERSEA AMERICANA MILL.", null, "2490", "1616", "53328", "33", "FRUTO FRESCO" ]
 , [ "row-ij3e~7f8e~3ngw", "00000000-0000-0000-C2FC-186D8A5D28E2", 0, 1550805154, null, 1550805154, null, "{ }", "5", "ANTIOQUIA", "5756", "SONSON", "FRUTALES", "AGUACATE", "AGUACATE", "AGUACATE", "5010101", "PERSEA AMERICANA MILL.", "2018", "2050", "1350", "20250", "15", "FRUTO FRESCO" ]
 , [ "row-7c29-kuck-xuud", "00000000-0000-0000-C037-1C24CC335A94", 0, 1550805154, null, 1550805154, null, "{ }", "5", "ANTIOQUIA", "5541", "PEÑOL", "FRUTALES", "AGUACATE", "AGUACATE", "AGUACATE", "5010101", "PERSEA AMERICANA MILL.", "2018", "669", "535", "6420", "12", "FRUTO FRESCO" ]
