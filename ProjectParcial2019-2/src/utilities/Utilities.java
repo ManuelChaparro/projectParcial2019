@@ -1,5 +1,7 @@
 package utilities;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.ConnectException;
@@ -11,6 +13,7 @@ import java.net.URL;
 import java.net.UnknownHostException;
 
 public class Utilities {	
+	
 	
 	public static void main(String[] args) {
 		getHttpURLConnection(false, "https://www.datos.gov.co/api/views/ddse-euqv/rows.json?accessType=DOWNLOAD");
@@ -49,6 +52,15 @@ public class Utilities {
 		System.out.println(inputStream);
 		
 		return inputStream;
+	}
+	
+	public static void writeFile() throws FileNotFoundException {
+		FileOutputStream out = null;
+		out = new FileOutputStream("resource/xd.xd");
+		int c;
+//		while ((c = in.read()) != -1) {
+//			
+//		}
 	}
 	
 }
