@@ -23,4 +23,9 @@ public class ViewsUtilities {
 		
 	}
 
+	public void showErrorString() {
+		JOptionPane.showMessageDialog(null, Constants.ERROR_STRING, "ERROR", JOptionPane.ERROR_MESSAGE);
+		
+	}
+
 }

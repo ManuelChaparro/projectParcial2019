@@ -48,6 +48,7 @@ public class NewFileContainer extends JPanel{
 		LIdDepartament = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.ID_DEPARTMENT), Color.WHITE, Color.WHITE, Constants.DEFAULT_FONT);
 		idDepartment = new TextFieldObject();
 		idDepartment.setEnabled(false);
+		setIdDepartment();
 		PanelIdDepartament = new PanelObject(Constants.AQUA_COLOR, LIdDepartament, idDepartment);
 		
 		LDepartaments = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.DEPARTMENT), Color.WHITE, Color.WHITE, Constants.DEFAULT_FONT);
@@ -271,20 +272,16 @@ public class NewFileContainer extends JPanel{
 		String department = "";
 		String town = "";
 		String physicalState = "";
-		try {
-			idDepartment = Integer.parseInt(this.idDepartment.getText());
-			department = (String) departaments.getSelectedItem();
-			idTown = Integer.parseInt(this.idTown.getText());
-			town = this.town.getText();
-			sownArea = Integer.parseInt(this.sownArea.getText());
-			harvestedArea = Integer.parseInt(this.harvestedArea.getText());
-			production = Integer.parseInt(this.production.getText());
-			performance = Integer.parseInt(this.performance.getText());
-			physicalState = (String) this.physicalState.getSelectedItem();
-			period = (int) this.period.getValue();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+		idDepartment = Integer.parseInt(this.idDepartment.getText());
+		department = (String) departaments.getSelectedItem();
+		idTown = Integer.parseInt(this.idTown.getText());
+		town = this.town.getText();
+		sownArea = Integer.parseInt(this.sownArea.getText());
+		harvestedArea = Integer.parseInt(this.harvestedArea.getText());
+		production = Integer.parseInt(this.production.getText());
+		performance = Integer.parseInt(this.performance.getText());
+		physicalState = (String) this.physicalState.getSelectedItem();
+		period = (int) this.period.getValue();
 		return new Object[] {idDepartment, department, idTown, town,
 				sownArea, harvestedArea, production, performance, physicalState, period};
 	}

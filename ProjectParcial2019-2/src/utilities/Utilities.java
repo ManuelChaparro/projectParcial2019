@@ -12,6 +12,10 @@ import java.net.UnknownHostException;
 
 public class Utilities {	
 	
+	public static void main(String[] args) {
+		getHttpURLConnection(false, "https://www.datos.gov.co/api/views/ddse-euqv/rows.json?accessType=DOWNLOAD");
+	}
+	
 	public static InputStream getHttpURLConnection(boolean isProxy, String filePath) {
 		HttpURLConnection httpURLConnection;
 		URL url = null;
@@ -21,6 +25,7 @@ public class Utilities {
 			if ( !isProxy ) {
 				httpURLConnection = (HttpURLConnection) url.openConnection();	
 				inputStream = httpURLConnection.getInputStream();
+				System.out.println(inputStream.read());
 			}else {
 				//Para funcionamiento dentro de la universidad
 				Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("172.16.0.73", 8080));
@@ -43,6 +48,7 @@ public class Utilities {
 			System.out.println(  e.getMessage()  );
 		}
 		System.out.println(inputStream);
+		
 		return inputStream;
 	}
 	

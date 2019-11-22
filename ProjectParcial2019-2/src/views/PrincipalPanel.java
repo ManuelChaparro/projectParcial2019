@@ -2,7 +2,6 @@ package views;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.util.ArrayList;
 import javax.swing.JPanel;
 import controller.Controller;
 
@@ -15,14 +14,14 @@ public class PrincipalPanel extends JPanel{
 	private ContainerNorth north;
 	private PanelTable center;
 	
-	public PrincipalPanel(ArrayList<String> list, Controller controller) {
+	public PrincipalPanel(Object[][] objects, Controller controller) {
 		setLayout(new BorderLayout());
 		setBackground(Color.WHITE);
 		
 		north = new ContainerNorth(controller);
 		add(north, BorderLayout.NORTH);
 		
-		center = new PanelTable(null);
+		center = new PanelTable(objects);
 		add(center, BorderLayout.CENTER);
 		
 		setVisible(true);
@@ -37,5 +36,6 @@ public class PrincipalPanel extends JPanel{
 		center.setNewAvocado(data);
 		
 	}
+
 
 }

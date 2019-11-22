@@ -7,6 +7,7 @@ import java.io.IOException;
 import handler.HandlerLanguage;
 import models.Avocado;
 import models.Calculations;
+import persistence.JsonFileManager;
 
 public class Controller implements ActionListener {
 
@@ -25,7 +26,7 @@ public class Controller implements ActionListener {
 		loadConfiguration();
 		newFileDialog = new NewFileDialog(this);
 		graphicDialog = new GraphicDialog(this);
-		window = new PrincipalWindow(null, this);
+		window = new PrincipalWindow(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE), this);
 
 	}
 
@@ -64,7 +65,7 @@ public class Controller implements ActionListener {
 			newFileDialog.setVisible(false);
 			newFileDialog.clearData();
 			break;
-
+			
 		default:
 			break;
 		}
@@ -72,18 +73,24 @@ public class Controller implements ActionListener {
 	}
 
 	private void addNewAvocado() {
-		Object[] newAvocado = newFileDialog.getDataAvocado();
-		if ((int) newAvocado[4] < (int) newAvocado[5]) {
-			viewsUtilities.showErrorArea();
-		}else {
-			avocado = new Avocado((int)newAvocado[0], (String) newAvocado[1],(int) newAvocado[2],
-					(String) newAvocado[3], (int) newAvocado[4],(int) newAvocado[5],
-					(int) newAvocado[6],(int) newAvocado[7], (String) newAvocado[8],
-					(int)newAvocado[9]);
-			Object[] data = avocado.toMatrixObject(avocado);
-			window.setNewAvocadoInTable(data);
-			newFileDialog.clearData();
+		try {
+			Object[] newAvocado = newFileDialog.getDataAvocado();
+			if ((int) newAvocado[4] < (int) newAvocado[5]) {
+				viewsUtilities.showErrorArea();
+				
+			}else {
+				avocado = new Avocado((int)newAvocado[0], (String) newAvocado[1],(int) newAvocado[2],
+						(String) newAvocado[3], (int) newAvocado[4],(int) newAvocado[5],
+						(int) newAvocado[6],(int) newAvocado[7], (String) newAvocado[8],
+						(int)newAvocado[9]);
+				Object[] data = avocado.toMatrixObject(avocado);
+				window.setNewAvocadoInTable(data);
+				newFileDialog.clearData();
+			}
+		} catch (NumberFormatException e) {
+			viewsUtilities.showErrorString();
 		}
+		
 		
 	}
 

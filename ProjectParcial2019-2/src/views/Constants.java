@@ -9,10 +9,12 @@ public class Constants {
 	public static final String TITLE_WINDOW = "AVOCADO_REGISTER";
 	public static final String TITLE_DIALOG_NEW = "NEW_FILE";
 	public static final String TITLE_DIALOG_GRAPHIC = "GRAPHIC";
+	public static final String TITLE_ADD_NEW_CHAIN = "ADD_NEW_CHAIN";
 	
 	public static final String OPTION_FILE = "FILE";
 	public static final String OPTION_FILE_ADD_AVOCADO = "ADD_INFO_AVOCADO";
 	public static final String OPTION_FILE_SHOW_GRAPHIC = "SHOW_GRAPHIC";
+	public static final String OPTION_FILE_READ_FILE = "READ_LOCAL_FILE";
 	public static final String OPTION_CHANGE_LANGUAGE = "CHANGE_LENGUAGE";
 	public static final String OPTION_CHANGE_L_SPANISH = "CHANGE_L_SPANISH";
 	public static final String OPTION_CHANGE_L_ENGLISH = "CHANGE_L_ENGLISH";
@@ -48,11 +50,13 @@ public class Constants {
 	public static final String ERROR_BY_ZERO = "ERROR_BY_ZERO";
 	public static final String ERROR_TO_INT = "ERROR_TO_INT";
 	public static final Object ERROR_AREA = "ERROR_AREA";
+	public static final Object ERROR_STRING = "DIGITE CORRECTAMENTE EL FORMULARIO";
 	
 	//Constants for paths
 	public static final String PATH_ICON_FRAME = "/resource/iconFrame.png";
 	public static final String PATH_ICON_ACCEPT = "/resource/iconAccept.png";
 	public static final String PATH_ICON_CANCEL = "/resource/iconCancel.png";
+	public static final String PATH_LOCAL_FILE = "resource/avocadosData.AVOCADOS";
 	public static final String NAME_FILE_CONFIG = "config.init";
 	
 	public static final String PATH_HAN_LEN_SPANISH = "language/language_spanish.properties";

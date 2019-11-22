@@ -2,11 +2,8 @@ package views;
 
 import java.awt.Dimension;
 import java.awt.Image;
-import java.util.ArrayList;
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-
 import controller.Controller;
 import handler.HandlerLanguage;
 
@@ -19,7 +16,7 @@ public class PrincipalWindow extends JFrame{
 	private PrincipalPanel principalPanelObject;
 	private Image imageIcon;
 	
-	public PrincipalWindow(ArrayList<String> list, Controller controller) {
+	public PrincipalWindow(Object[][] objects, Controller controller) {
 		setTitle(HandlerLanguage.languageProperties.getProperty(Constants.TITLE_WINDOW));
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setPreferredSize(new Dimension(WIDTH, HEIGHT));
@@ -28,12 +25,12 @@ public class PrincipalWindow extends JFrame{
 		setMinimumSize(new Dimension(Constants.M_WIDTH_SIZE, Constants.M_HEIGHT_SIZE));
 		imageIcon = new ImageIcon(getClass().getResource(Constants.PATH_ICON_FRAME)).getImage();
 		setIconImage(imageIcon);
-		initComponents(list, controller);
+		initComponents(objects, controller);
 		setVisible(true);
 	}
 	
-	private void initComponents(ArrayList<String> list, Controller controller) {
-		principalPanelObject = new PrincipalPanel(list, controller);
+	private void initComponents(Object[][] objects, Controller controller) {
+		principalPanelObject = new PrincipalPanel(objects, controller);
 		add(principalPanelObject);
 	}
 

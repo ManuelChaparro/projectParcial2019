@@ -35,12 +35,12 @@ public class PanelTable extends JPanel{
 		table.setVisible(true);
 		table.setBackground(Color.GRAY);
 		table.setBackground(Color.WHITE);
-		table.setFont(Constants.DEFAULT_FONT);
-		table.getTableHeader().setFont(Constants.DEFAULT_FONT);
+		table.setFont(Constants.DEFAULT_FONT_MIN);
+		table.getTableHeader().setFont(Constants.DEFAULT_FONT_MIN);
 		table.setEditingRow(500);
 		table.getColumnModel().getColumn(0).setPreferredWidth(5);
 		table.setRowHeight(25);
-		table.setSelectionBackground(Color.BLUE.darker().darker());
+		table.setSelectionBackground(Color.ORANGE.darker().darker());
 		table.setSelectionForeground(Color.WHITE);
 		scroll = new JScrollPane(table);
 		table.getTableHeader().setReorderingAllowed(false);
@@ -78,5 +78,4 @@ public class PanelTable extends JPanel{
 				HandlerLanguage.languageProperties.getProperty(Constants.H_PERIOD) };
 		tableModel.setColumnIdentifiers(HEADERS);
 	}
-
 }
