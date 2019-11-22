@@ -15,10 +15,6 @@ public class TableModelObject extends JTable {
 		
 	}
 
-	private void initComponents() {
-		
-	}
-
 	
 
 }
