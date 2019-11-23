@@ -120,11 +120,11 @@ public class NewFileContainer extends JPanel{
 		//Buttons accept and cancel
 		Image imageAccept = new ImageIcon(getClass().getResource(Constants.PATH_ICON_ACCEPT)).getImage();
 		Icon rescaledAccept= new ImageIcon(imageAccept.getScaledInstance(35, 35, Image.SCALE_SMOOTH));
-		accept = new ButtonObject("", Color.WHITE, rescaledAccept, controller, Commands.ACCEPT_BUTTON.name());
+		accept = new ButtonObject("", Color.WHITE, rescaledAccept, controller, Commands.ACCEPT_BUTTON_CHAIN.name());
 		
 		Image imageCancel = new ImageIcon(getClass().getResource(Constants.PATH_ICON_CANCEL)).getImage();
 		Icon rescaledCancel = new ImageIcon(imageCancel.getScaledInstance(35, 35, Image.SCALE_SMOOTH));
-		cancel = new ButtonObject("", Color.WHITE, rescaledCancel, controller, Commands.CANCEL_BUTTON.name());
+		cancel = new ButtonObject("", Color.WHITE, rescaledCancel, controller, Commands.CANCEL_BUTTON_CHAIN.name());
 		
 		containerButtons = new PanelObject(Constants.AQUA_COLOR, accept, cancel);
 		add(containerButtons);

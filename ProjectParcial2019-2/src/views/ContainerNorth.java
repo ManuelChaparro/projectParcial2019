@@ -25,7 +25,7 @@ public class ContainerNorth extends JPanel{
 	private static final long serialVersionUID = 1L;
 	private JMenu archiveMenu, changeLenguageMenu;
 	private JMenuBar menuBar;
-	private JMenuItem spanishItem, englishItem, addAvocadoItem, showGraphicItem;
+	private JMenuItem spanishItem, englishItem, addAvocadoItem, showGraphicItem, deleteItem;
 
 	public ContainerNorth(Controller controller) {
 		setLayout(new FlowLayout(0, 15, 0));
@@ -57,6 +57,11 @@ public class ContainerNorth extends JPanel{
 		showGraphicItem.setActionCommand(Commands.SHOW_GRAPHIC.name());
 		showGraphicItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_G, InputEvent.CTRL_DOWN_MASK));
 		
+		deleteItem = new JMenuItem(HandlerLanguage.languageProperties.getProperty(Constants.OPTION_DELETE_ITEM));
+		deleteItem.addActionListener(controller);
+		deleteItem.setActionCommand(Commands.DELETE_CHAIN.name());
+		deleteItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.CTRL_DOWN_MASK));
+		
 		//Creation of MenuLanguage
 		changeLenguageMenu = new JMenu(HandlerLanguage.languageProperties.getProperty(Constants.OPTION_CHANGE_LANGUAGE));
 		changeLenguageMenu.setFont(Constants.DEFAULT_FONT);
@@ -76,6 +81,7 @@ public class ContainerNorth extends JPanel{
 		//Add Items to Menus
 		archiveMenu.add(addAvocadoItem);
 		archiveMenu.add(showGraphicItem);
+		archiveMenu.add(deleteItem);
 		
 		changeLenguageMenu.add(spanishItem);
 		changeLenguageMenu.add(englishItem);
@@ -92,6 +98,7 @@ public class ContainerNorth extends JPanel{
 		archiveMenu.setText(HandlerLanguage.languageProperties.getProperty(Constants.OPTION_FILE));
 		addAvocadoItem.setText(HandlerLanguage.languageProperties.getProperty(Constants.OPTION_FILE_ADD_AVOCADO));
 		showGraphicItem.setText(HandlerLanguage.languageProperties.getProperty(Constants.OPTION_FILE_SHOW_GRAPHIC));
+		deleteItem.setText(HandlerLanguage.languageProperties.getProperty(Constants.OPTION_DELETE_ITEM));
 		changeLenguageMenu.setText(HandlerLanguage.languageProperties.getProperty(Constants.OPTION_CHANGE_LANGUAGE));
 		spanishItem.setText(HandlerLanguage.languageProperties.getProperty(Constants.OPTION_CHANGE_L_SPANISH));
 		englishItem.setText(HandlerLanguage.languageProperties.getProperty(Constants.OPTION_CHANGE_L_ENGLISH));

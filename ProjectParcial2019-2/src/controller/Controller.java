@@ -4,32 +4,59 @@ import views.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.ArrayList;
+
 import handler.HandlerLanguage;
 import models.Avocado;
-import models.Calculations;
+import models.Chain;
 import persistence.JsonFileManager;
 import utilities.Utilities;
 
 public class Controller implements ActionListener {
 
 	private HandlerLanguage config;
+	private DeleteChain deleteChain;
 	private PrincipalWindow window;
 	private GraphicDialog graphicDialog;
 	private NewFileDialog newFileDialog;
 	private ViewsUtilities viewsUtilities;
-	private Calculations calculations;
+	private Chain chain;
 	private Avocado avocado;
 
 	public Controller() {
 		writeFile();
 		viewsUtilities = new ViewsUtilities();
-		calculations = new Calculations();
+		chain = new Chain();
 		config = null;
 		loadConfiguration();
 		newFileDialog = new NewFileDialog(this);
 		graphicDialog = new GraphicDialog(this);
-		window = new PrincipalWindow(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE), this);
+		deleteChain = new DeleteChain(this);
+		initWindow();
 		manageChangeLanguageES();
+	}
+
+	private void initWindow() {
+		Object[][] allData = JsonFileManager.readFile(Constants.PATH_LOCAL_FILE);
+		Avocado avocado = null;
+		for (int i = 0; i < allData.length; i++) {
+			if (allData[i][9]==null) {
+				avocado = new Avocado(Integer.parseInt((String) allData[i][0]), (String)allData[i][1],
+						Integer.parseInt((String) allData[i][2]), (String)allData[i][3],
+						Integer.parseInt((String) allData[i][4]), Integer.parseInt((String) allData[i][5]),
+						Integer.parseInt((String) allData[i][6]), Double.parseDouble((String) allData[i][7]),
+						(String)allData[i][8], 0);
+				chain.setList(avocado);
+			}else {
+				avocado = new Avocado(Integer.parseInt((String) allData[i][0]), (String)allData[i][1],
+						Integer.parseInt((String) allData[i][2]), (String)allData[i][3],
+						Integer.parseInt((String) allData[i][4]), Integer.parseInt((String) allData[i][5]),
+						Integer.parseInt((String) allData[i][6]), Double.parseDouble((String) allData[i][7]),
+						(String)allData[i][8], Integer.parseInt((String) allData[i][9]));
+				chain.setList(avocado);
+			}
+		}
+		window = new PrincipalWindow(allData, this);
 	}
 
 	private void writeFile() {
@@ -66,18 +93,55 @@ public class Controller implements ActionListener {
 			calculatePerformance();
 			break;
 			
-		case ACCEPT_BUTTON:
+		case ACCEPT_BUTTON_CHAIN:
 			addNewAvocado();
 			newFileDialog.setVisible(false);
 			break;
 			
-		case CANCEL_BUTTON:
+		case CANCEL_BUTTON_CHAIN:
 			newFileDialog.setVisible(false);
 			newFileDialog.clearData();
 			break;
 			
+		case DELETE_CHAIN:
+			deleteChain.setVisible(true);
+			break;
+			
+		case ACCEPT_BUTTON_DELETE:
+			
+			break;
+			
+		case CANCEL_BUTTON_DELETE:
+			deleteChain.setVisible(false);
+			deleteChain.clearData();
+			break;
+		
+		case SEARCH_DELETE:
+			searchDelete();
+			break;
 		default:
 			break;
+		}
+
+	}
+
+	private void searchDelete() {
+		ArrayList<Avocado> avocadosList = chain.getAvocadosList();
+		Avocado itemFound = null;
+		Object[] data = deleteChain.getInfoDelete();
+		Object[] itemToDelete = new Object[10];
+		String town = "";
+		int period = 0;
+		for (int i = 0; i < avocadosList.size(); i++) {
+			town = (String) data[0];
+			period = Integer.parseInt((String) data[1]);
+			if (period==avocadosList.get(i).getPeriod() &&
+					town.equals(avocadosList.get(i).getTown())) {
+					itemFound = avocadosList.get(i);
+					itemToDelete = itemFound.toMatrixObject(itemFound);
+					deleteChain.setTextDelete(itemToDelete);
+					break;
+			}
 		}
 
 	}
@@ -109,7 +173,7 @@ public class Controller implements ActionListener {
 		int performance = 0;
 		try {
 			data = newFileDialog.getDataPerformance();
-			performance = calculations.calculatePerformance(data);
+			performance = chain.calculatePerformance(data);
 		} catch(ArithmeticException e){
 			viewsUtilities.showErrorByZero();
 		}

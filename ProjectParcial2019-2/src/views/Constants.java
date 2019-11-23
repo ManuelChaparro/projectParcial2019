@@ -10,10 +10,12 @@ public class Constants {
 	public static final String TITLE_DIALOG_NEW = "NEW_FILE";
 	public static final String TITLE_DIALOG_GRAPHIC = "GRAPHIC";
 	public static final String TITLE_ADD_NEW_CHAIN = "ADD_NEW_CHAIN";
+	public static final String TITLE_DELETE_CHAIN = "DELETE_CHAIN";
 	
 	public static final String OPTION_FILE = "FILE";
 	public static final String OPTION_FILE_ADD_AVOCADO = "ADD_INFO_AVOCADO";
 	public static final String OPTION_FILE_SHOW_GRAPHIC = "SHOW_GRAPHIC";
+	public static final String OPTION_DELETE_ITEM = "DELETE_ITEM";
 	public static final String OPTION_FILE_READ_FILE = "READ_LOCAL_FILE";
 	public static final String OPTION_CHANGE_LANGUAGE = "CHANGE_LENGUAGE";
 	public static final String OPTION_CHANGE_L_SPANISH = "CHANGE_L_SPANISH";
@@ -76,6 +78,7 @@ public class Constants {
 	//Constants for Colors
 	public static final Color DEFAULT_COLOR = Color.decode("#008000");
 	public static final Color AQUA_COLOR = Color.decode("#009D71");
+	public static final Color RED_COLOR = Color.decode("#CB1D11");
 	
 	//Constants for Departments
 	public static final String AMAZONAS = "AMAZONAS";

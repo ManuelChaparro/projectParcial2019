@@ -9,13 +9,13 @@ public class Avocado {
 	private int sownArea;
 	private int harvestedArea;
 	private int production;
-	private int performance;
+	private double performance;
 	private String physicalState;
 	private int period;
 	
 	public Avocado(int idDepartment, String department, int idTown, String town,
 			int sownArea, int harvestedArea, int production,
-			int performance, String physicalState, int period) {
+			double performance, String physicalState, int period) {
 		
 		this.idDepartment = idDepartment;
 		this.department = department;
@@ -86,7 +86,7 @@ public class Avocado {
 	public String getPhysicalState() {
 		return physicalState;
 	}
-	public int getPerformance() {
+	public double getPerformance() {
 		return performance;
 	}
 	public int getPeriod() {
