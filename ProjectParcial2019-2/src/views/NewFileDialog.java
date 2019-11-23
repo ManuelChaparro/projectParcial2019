@@ -39,7 +39,6 @@ public class NewFileDialog extends JDialog {
 
 	private void initComponents(Controller controller) {
 		JPanel northLabel = new JPanel();
-		System.out.println(HandlerLanguage.languageProperties.getProperty(Constants.TITLE_ADD_NEW_CHAIN));
 		description = new JLabel(HandlerLanguage.languageProperties.getProperty(Constants.TITLE_ADD_NEW_CHAIN));
 		northLabel.setBackground(Color.WHITE);
 		description.setFont(Constants.DEFAULT_FONT);

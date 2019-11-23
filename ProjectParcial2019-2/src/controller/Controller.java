@@ -8,6 +8,7 @@ import handler.HandlerLanguage;
 import models.Avocado;
 import models.Calculations;
 import persistence.JsonFileManager;
+import utilities.Utilities;
 
 public class Controller implements ActionListener {
 
@@ -20,6 +21,7 @@ public class Controller implements ActionListener {
 	private Avocado avocado;
 
 	public Controller() {
+		writeFile();
 		viewsUtilities = new ViewsUtilities();
 		calculations = new Calculations();
 		config = null;
@@ -27,7 +29,15 @@ public class Controller implements ActionListener {
 		newFileDialog = new NewFileDialog(this);
 		graphicDialog = new GraphicDialog(this);
 		window = new PrincipalWindow(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE), this);
+		manageChangeLanguageES();
+	}
 
+	private void writeFile() {
+		try {
+			Utilities.writeFile(Constants.PATH_LOCAL_FILE, Constants.PATH_URL_FILE);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override

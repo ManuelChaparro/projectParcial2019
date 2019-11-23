@@ -49,14 +49,16 @@ public class Constants {
 	public static final String FILE_NOT_FOUND = "ERROR_NAME_FILE_CONFIG";
 	public static final String ERROR_BY_ZERO = "ERROR_BY_ZERO";
 	public static final String ERROR_TO_INT = "ERROR_TO_INT";
-	public static final Object ERROR_AREA = "ERROR_AREA";
-	public static final Object ERROR_STRING = "DIGITE CORRECTAMENTE EL FORMULARIO";
+	public static final String ERROR_AREA = "ERROR_AREA";
+	public static final String ERROR_STRING = "DIGITE CORRECTAMENTE EL FORMULARIO";
+	public static final String ERROR_URL_FILE = "tThe url does not exist or is not accessible";
 	
 	//Constants for paths
 	public static final String PATH_ICON_FRAME = "/resource/iconFrame.png";
 	public static final String PATH_ICON_ACCEPT = "/resource/iconAccept.png";
 	public static final String PATH_ICON_CANCEL = "/resource/iconCancel.png";
 	public static final String PATH_LOCAL_FILE = "resource/avocadosData.AVOCADOS";
+	public static final String PATH_URL_FILE = "https://www.datos.gov.co/api/views/ddse-euqv/rows.json?accessType=DOWNLOAD";
 	public static final String NAME_FILE_CONFIG = "config.init";
 	
 	public static final String PATH_HAN_LEN_SPANISH = "language/language_spanish.properties";
