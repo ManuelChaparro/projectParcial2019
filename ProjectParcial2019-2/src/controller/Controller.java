@@ -29,6 +29,7 @@ public class Controller implements ActionListener {
 		config = null;
 		loadConfiguration();
 		
+		
 //		newFileDialog = new NewFileDialog(this);
 		graphicDialog = new GraphicDialog(this);
 //		deleteChain = new DeleteChain(this);
