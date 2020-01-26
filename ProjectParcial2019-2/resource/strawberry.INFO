@@ -1,0 +1,643 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "8yeg-vys5",
+      "name" : "Cadena Productiva Fresa - Asistencia Técnica",
+      "attribution" : "Agencia de Desarrollo Rural",
+      "attributionLink" : "http://www.adr.gov.co",
+      "averageRating" : 0,
+      "category" : "Agricultura y Desarrollo Rural",
+      "createdAt" : 1539204827,
+      "description" : "Datos agregados de los beneficiarios de asistencia técnica durante la vigencia 2017, resultante de los convenios suscritos por la Agencia de Desarrollo Rural (ADR) para la prestación de éste servicio público, en el marco de la Ley 607 de 2000.\nSe indica el número de beneficiarios, la inversión y hectáreas estimadas, discriminado por departamento, municipio, grupo etareo, condición de víctima, discapacidad, orientación sexual, puntaje de SISBEN, y pertenencia étnica.",
+      "displayType" : "table",
+      "downloadCount" : 13,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1539205244,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 29875883,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1539205153,
+      "publicationGroup" : 15579177,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1539205152,
+      "rowsUpdatedBy" : "7qnn-9hh6",
+      "tableId" : 15579177,
+      "totalTimesRated" : 0,
+      "viewCount" : 117,
+      "viewLastModified" : 1539205154,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1539205154,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 844000,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1539205154,
+        "workflowId" : 2188,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "failureCount" : 0,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "7qnn-9hh6",
+          "displayName" : "Datos Abiertos ADR"
+        }
+      } ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 378230111,
+        "name" : "Departamento",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "departamento",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324110,
+        "cachedContents" : {
+          "largest" : "HUILA",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "BOYACÁ",
+            "count" : 20
+          }, {
+            "item" : "CAUCA",
+            "count" : 19
+          }, {
+            "item" : "HUILA",
+            "count" : 18
+          } ],
+          "smallest" : "BOYACÁ"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230109,
+        "name" : "Municipio",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "municipio",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324108,
+        "cachedContents" : {
+          "largest" : "TINJACÁ",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "TINJACÁ",
+            "count" : 20
+          }, {
+            "item" : "PURACÉ",
+            "count" : 19
+          }, {
+            "item" : "SILVIA",
+            "count" : 18
+          }, {
+            "item" : "GARZÓN",
+            "count" : 17
+          } ],
+          "smallest" : "GARZÓN"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230108,
+        "name" : "CodigoMunicipio",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "codigomunicipio",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324107,
+        "cachedContents" : {
+          "largest" : "41298",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "15808",
+            "count" : 20
+          }, {
+            "item" : "19585",
+            "count" : 19
+          }, {
+            "item" : "19743",
+            "count" : 18
+          }, {
+            "item" : "41298",
+            "count" : 17
+          } ],
+          "smallest" : "15808"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230114,
+        "name" : "LineaProductiva",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "lineaproductiva",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324113,
+        "cachedContents" : {
+          "largest" : "FRESA",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "FRESA",
+            "count" : 20
+          } ],
+          "smallest" : "FRESA"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230118,
+        "name" : "Sexo",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "sexo",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324117,
+        "cachedContents" : {
+          "largest" : "MUJER",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "HOMBRE",
+            "count" : 20
+          }, {
+            "item" : "MUJER",
+            "count" : 19
+          } ],
+          "smallest" : "HOMBRE"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230107,
+        "name" : "GrupoEtareo",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "grupoetareo",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324106,
+        "cachedContents" : {
+          "largest" : "70 A 74",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "20 A 24",
+            "count" : 20
+          }, {
+            "item" : "25 A 29",
+            "count" : 19
+          }, {
+            "item" : "40 A 44",
+            "count" : 18
+          }, {
+            "item" : "45 A 49",
+            "count" : 17
+          }, {
+            "item" : "30 A 34",
+            "count" : 16
+          }, {
+            "item" : "55 A 59",
+            "count" : 15
+          }, {
+            "item" : "70 A 74",
+            "count" : 14
+          }, {
+            "item" : "35 A 39",
+            "count" : 13
+          }, {
+            "item" : "50 A 54",
+            "count" : 12
+          }, {
+            "item" : "60 A 64",
+            "count" : 11
+          } ],
+          "smallest" : "20 A 24"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230117,
+        "name" : "Victimas",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "victimas",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324116,
+        "cachedContents" : {
+          "largest" : "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV",
+            "count" : 20
+          }, {
+            "item" : "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)",
+            "count" : 19
+          } ],
+          "smallest" : "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230110,
+        "name" : "PuntajeSISBEN",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "puntajesisben",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324109,
+        "cachedContents" : {
+          "largest" : "SIN PUNTAJE",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "30,00 A 39,99",
+            "count" : 20
+          }, {
+            "item" : "10,00 A 19,99",
+            "count" : 19
+          }, {
+            "item" : "00,00 A 09,99",
+            "count" : 18
+          }, {
+            "item" : "20,00 A 29,99",
+            "count" : 17
+          }, {
+            "item" : "SIN PUNTAJE",
+            "count" : 16
+          }, {
+            "item" : "50,00 A 59,99",
+            "count" : 15
+          } ],
+          "smallest" : "00,00 A 09,99"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230116,
+        "name" : "Etnia",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "etnia",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324115,
+        "cachedContents" : {
+          "largest" : "NINGUNA",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "NINGUNA",
+            "count" : 20
+          }, {
+            "item" : "INDÍGENA",
+            "count" : 19
+          } ],
+          "smallest" : "INDÍGENA"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230115,
+        "name" : "Discapacidad",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "discapacidad",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324114,
+        "cachedContents" : {
+          "largest" : "SI",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "NO",
+            "count" : 20
+          }, {
+            "item" : "SI",
+            "count" : 19
+          } ],
+          "smallest" : "NO"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230119,
+        "name" : "LGBTI",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "lgbti",
+        "position" : 11,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70324118,
+        "cachedContents" : {
+          "largest" : "NO",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "NO",
+            "count" : 20
+          } ],
+          "smallest" : "NO"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378230113,
+        "name" : "Beneficiarios",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "beneficiarios",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 70324112,
+        "cachedContents" : {
+          "largest" : "6",
+          "non_null" : 26,
+          "average" : "1.653846153846154",
+          "null" : 0,
+          "top" : [ {
+            "item" : "1",
+            "count" : 20
+          }, {
+            "item" : "2",
+            "count" : 19
+          }, {
+            "item" : "3",
+            "count" : 18
+          }, {
+            "item" : "6",
+            "count" : 17
+          }, {
+            "item" : "5",
+            "count" : 16
+          }, {
+            "item" : "4",
+            "count" : 15
+          } ],
+          "smallest" : "1",
+          "sum" : "43"
+        },
+        "format" : {
+          "align" : "right"
+        }
+      }, {
+        "id" : 378230112,
+        "name" : "Inversion",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "inversion",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 70324111,
+        "cachedContents" : {
+          "largest" : "2171428.57",
+          "non_null" : 26,
+          "average" : "605860.8046153846",
+          "null" : 0,
+          "top" : [ {
+            "item" : "400000.00",
+            "count" : 20
+          }, {
+            "item" : "361904.76",
+            "count" : 19
+          }, {
+            "item" : "723809.52",
+            "count" : 18
+          }, {
+            "item" : "1085714.29",
+            "count" : 17
+          }, {
+            "item" : "2171428.57",
+            "count" : 16
+          }, {
+            "item" : "1809523.81",
+            "count" : 15
+          }, {
+            "item" : "1447619.05",
+            "count" : 14
+          } ],
+          "smallest" : "361904.76",
+          "sum" : "15752380.92"
+        },
+        "format" : {
+          "align" : "right"
+        }
+      }, {
+        "id" : 378230106,
+        "name" : "Hectareas",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "hectareas",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 70324105,
+        "cachedContents" : {
+          "largest" : "18.85",
+          "non_null" : 26,
+          "average" : "5.194615384615385",
+          "null" : 0,
+          "top" : [ {
+            "item" : "3.14",
+            "count" : 20
+          }, {
+            "item" : "6.28",
+            "count" : 19
+          }, {
+            "item" : "9.43",
+            "count" : 18
+          }, {
+            "item" : "18.85",
+            "count" : 17
+          }, {
+            "item" : "15.71",
+            "count" : 16
+          }, {
+            "item" : "12.57",
+            "count" : 15
+          } ],
+          "smallest" : "3.14",
+          "sum" : "135.06"
+        },
+        "format" : {
+          "align" : "right"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "custom_fields" : {
+          "Información de la Entidad" : {
+            "Municipio" : "Bogotá D.C.",
+            "Nombre de la Entidad" : "Agencia de Desarrollo Rural",
+            "Orden" : "Nacional",
+            "Sector" : "Agricultura y Desarrollo Rural",
+            "Área o dependencia" : " Dirección de Asistencia Técnica",
+            "Departamento" : "Bogotá D.C."
+          },
+          "Información de Datos" : {
+            "Cobertura Geográfica" : "Nacional",
+            "Idioma" : "Español",
+            "Frecuencia de Actualización" : "Anual",
+            "Fecha Emisión (aaaa-mm-dd)" : "2018-09-01"
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+      },
+      "owner" : {
+        "id" : "7qnn-9hh6",
+        "displayName" : "Datos Abiertos ADR",
+        "profileImageUrlLarge" : "/api/users/7qnn-9hh6/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/7qnn-9hh6/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/7qnn-9hh6/profile_images/TINY",
+        "screenName" : "Datos Abiertos ADR",
+        "type" : "interactive",
+        "userSegment" : "site_member"
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "7qnn-9hh6",
+        "displayName" : "Datos Abiertos ADR",
+        "profileImageUrlLarge" : "/api/users/7qnn-9hh6/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/7qnn-9hh6/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/7qnn-9hh6/profile_images/TINY",
+        "screenName" : "Datos Abiertos ADR",
+        "type" : "interactive",
+        "userSegment" : "site_member"
+      },
+      "tags" : [ "fresa", "asistencia técnica agropecuaria", "extensión agropecuaria" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-6ung.rhpn_8csn", "00000000-0000-0000-86AB-D343574D6056", 0, 1539205157, null, 1539205157, null, "{ }", "BOYACÁ", "TINJACÁ", "15808", "FRESA", "HOMBRE", "20 A 24", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000.00", "3.14" ]
+, [ "row-2j3s_u6rk_e3cf", "00000000-0000-0000-6540-5384C35A17FD", 0, 1539205157, null, 1539205157, null, "{ }", "BOYACÁ", "TINJACÁ", "15808", "FRESA", "HOMBRE", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000.00", "3.14" ]
+, [ "row-69ax-9rau-f7n5", "00000000-0000-0000-B9C9-42309BD9DE62", 0, 1539205157, null, 1539205157, null, "{ }", "BOYACÁ", "TINJACÁ", "15808", "FRESA", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000.00", "3.14" ]
+, [ "row-quth_yvzt~gfkg", "00000000-0000-0000-527E-6672AFA64460", 0, 1539205157, null, 1539205157, null, "{ }", "BOYACÁ", "TINJACÁ", "15808", "FRESA", "MUJER", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000.00", "3.14" ]
+, [ "row-8yqv~da28~h9ha", "00000000-0000-0000-64D1-89C741F908EB", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "PURACÉ", "19585", "FRESA", "MUJER", "20 A 24", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-tj4y_qkin.db3e", "00000000-0000-0000-2640-2254C74C445B", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "PURACÉ", "19585", "FRESA", "HOMBRE", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "00,00 A 09,99", "NINGUNA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-rv3k~3nvj~k5zg", "00000000-0000-0000-3C26-D00B7FDD033F", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "PURACÉ", "19585", "FRESA", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "00,00 A 09,99", "NINGUNA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-nygt.unnq-nfcc", "00000000-0000-0000-94C2-108D6658CD00", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "PURACÉ", "19585", "FRESA", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "INDÍGENA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-cn4q~gkeu~q3ez", "00000000-0000-0000-783C-C999C81C1FFA", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "PURACÉ", "19585", "FRESA", "HOMBRE", "30 A 34", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "20,00 A 29,99", "NINGUNA", "NO", "NO", "2", "723809.52", "6.28" ]
+, [ "row-8bei~krkg~eent", "00000000-0000-0000-311F-0D8A58E7A429", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "PURACÉ", "19585", "FRESA", "HOMBRE", "30 A 34", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "00,00 A 09,99", "NINGUNA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-be3n_8mbz~ppnp", "00000000-0000-0000-F1CA-2DA25CE40B54", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "PURACÉ", "19585", "FRESA", "HOMBRE", "55 A 59", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "20,00 A 29,99", "NINGUNA", "SI", "NO", "1", "361904.76", "3.14" ]
+, [ "row-ssac-4saq.pn3j", "00000000-0000-0000-601A-A88B8B5D281F", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "PURACÉ", "19585", "FRESA", "HOMBRE", "70 A 74", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "INDÍGENA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-m7r7_un72~4cgu", "00000000-0000-0000-FEEC-387A71DDDEB9", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "HOMBRE", "20 A 24", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-azus-uv2w_tupd", "00000000-0000-0000-67CA-6E036162EC07", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "HOMBRE", "20 A 24", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "SIN PUNTAJE", "INDÍGENA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-7ubk_b37f.w56z", "00000000-0000-0000-8CBB-87FE0C5E69E4", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "MUJER", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-y4uq.b3e8.cjhk", "00000000-0000-0000-215B-A705A5B8C9B7", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "HOMBRE", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "3", "1085714.29", "9.43" ]
+, [ "row-bqps~fwzh_3xbr", "00000000-0000-0000-1CE1-EB779BB64178", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "MUJER", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "2", "723809.52", "6.28" ]
+, [ "row-dnna-wxxa-33pt", "00000000-0000-0000-5DDE-995431A78E8A", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "6", "2171428.57", "18.85" ]
+, [ "row-xw3x~g28i-mdek", "00000000-0000-0000-DF34-755489E1F31D", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "MUJER", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-akga~p6sz_9ecb", "00000000-0000-0000-A00B-828A7A6924BE", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "5", "1809523.81", "15.71" ]
+, [ "row-i5eg~e27k-8f24", "00000000-0000-0000-9E4C-EF1D536BEFA1", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "2", "723809.52", "6.28" ]
+, [ "row-7rn5.aaif~2e38", "00000000-0000-0000-FFE6-66BEAEAEF683", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "MUJER", "45 A 49", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-bgb6_3v5p.5gv7", "00000000-0000-0000-6735-D87C70C7C91F", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "HOMBRE", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "4", "1447619.05", "12.57" ]
+, [ "row-2jst~sdr9.f5nq", "00000000-0000-0000-484F-BD1F02193EF7", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "HOMBRE", "50 A 54", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-f68n-amee.vd8b", "00000000-0000-0000-1E93-1E9248093958", 0, 1539205157, null, 1539205157, null, "{ }", "CAUCA", "SILVIA", "19743", "FRESA", "HOMBRE", "60 A 64", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "361904.76", "3.14" ]
+, [ "row-fqjq_4iw7~n73g", "00000000-0000-0000-7F2E-3275BF127D78", 0, 1539205157, null, 1539205157, null, "{ }", "HUILA", "GARZÓN", "41298", "FRESA", "MUJER", "45 A 49", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "50,00 A 59,99", "NINGUNA", "NO", "NO", "1", "400000.00", "3.14" ]
+ ]
+}

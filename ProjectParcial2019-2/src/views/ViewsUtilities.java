@@ -31,5 +31,9 @@ public class ViewsUtilities {
 	public void showErrorUrlFileNotFound() {
 		JOptionPane.showMessageDialog(null, Constants.ERROR_STRING, "ERROR", JOptionPane.ERROR_MESSAGE);
 	}
+	
+	public void showMessage(String message) {
+		System.out.println(message);
+	}
 
 }

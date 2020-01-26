@@ -46,7 +46,7 @@ public class Utilities {
 		}catch (IOException e) {
 			System.out.println(  e.getMessage()  );
 		}
-		System.out.println(inputStream);
+//		System.out.println(inputStream);
 		
 		return inputStream;
 	}
@@ -59,7 +59,6 @@ public class Utilities {
 		int totalData = in.available();
 		while ((c = in.read()) != -1) {
 			out.write(c);	
-			System.out.println("Writing data, number of bytes remaining:  " + in.available() +"/"+ totalData);
 		}
 	}
 	

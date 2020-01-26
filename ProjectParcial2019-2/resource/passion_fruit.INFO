@@ -1,0 +1,778 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "cjjs-6r5i",
+      "name" : "Cadena Productiva Maracuyá - Asistencia Técnica",
+      "attribution" : "Agencia de Desarrollo Rural",
+      "attributionLink" : "http://www.adr.gov.co",
+      "averageRating" : 0,
+      "category" : "Agricultura y Desarrollo Rural",
+      "createdAt" : 1539127116,
+      "description" : "Datos agregados de los beneficiarios de asistencia técnica durante la vigencia 2017, resultante de los convenios suscritos por la Agencia de Desarrollo Rural (ADR) para la prestación de éste servicio público, en el marco de la Ley 607 de 2000.\nSe indica el número de beneficiarios, la inversión y hectáreas estimadas, discriminado por departamento, municipio, grupo etareo, condición de víctima, discapacidad, orientación sexual, puntaje de SISBEN, y pertenencia étnica.",
+      "displayType" : "table",
+      "downloadCount" : 15,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1539127414,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 29868222,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1539127400,
+      "publicationGroup" : 15576786,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1539127399,
+      "rowsUpdatedBy" : "7qnn-9hh6",
+      "tableId" : 15576786,
+      "totalTimesRated" : 0,
+      "viewCount" : 129,
+      "viewLastModified" : 1539127401,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1539127401,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 843962,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1539127401,
+        "workflowId" : 2188,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "failureCount" : 0,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "7qnn-9hh6",
+          "displayName" : "Datos Abiertos ADR"
+        }
+      } ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 378098529,
+        "name" : "Departamento",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "departamento",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288817,
+        "cachedContents" : {
+          "largest" : "HUILA",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "ANTIOQUIA",
+            "count" : 20
+          }, {
+            "item" : "BOYACÁ",
+            "count" : 19
+          }, {
+            "item" : "HUILA",
+            "count" : 18
+          } ],
+          "smallest" : "ANTIOQUIA"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378098537,
+        "name" : "Municipio",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "municipio",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288825,
+        "cachedContents" : {
+          "largest" : "SUAZA",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "CHIGORODÓ",
+            "count" : 20
+          }, {
+            "item" : "MIRAFLORES",
+            "count" : 19
+          }, {
+            "item" : "ELÍAS",
+            "count" : 18
+          }, {
+            "item" : "GARZÓN",
+            "count" : 17
+          }, {
+            "item" : "GIGANTE",
+            "count" : 16
+          }, {
+            "item" : "GUADALUPE",
+            "count" : 15
+          }, {
+            "item" : "LA PLATA",
+            "count" : 14
+          }, {
+            "item" : "SUAZA",
+            "count" : 13
+          } ],
+          "smallest" : "CHIGORODÓ"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378098538,
+        "name" : "CodigoMunicipio",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "codigomunicipio",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288826,
+        "cachedContents" : {
+          "largest" : "5172",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "5172",
+            "count" : 20
+          }, {
+            "item" : "15455",
+            "count" : 19
+          }, {
+            "item" : "41244",
+            "count" : 18
+          }, {
+            "item" : "41298",
+            "count" : 17
+          }, {
+            "item" : "41306",
+            "count" : 16
+          }, {
+            "item" : "41319",
+            "count" : 15
+          }, {
+            "item" : "41396",
+            "count" : 14
+          }, {
+            "item" : "41770",
+            "count" : 13
+          } ],
+          "smallest" : "15455"
+        },
+        "format" : {
+          "align" : "right"
+        }
+      }, {
+        "id" : 378098533,
+        "name" : "LineaProductiva",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "lineaproductiva",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288821,
+        "cachedContents" : {
+          "largest" : "MARACUYÁ",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "MARACUYÁ",
+            "count" : 20
+          } ],
+          "smallest" : "MARACUYÁ"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378098536,
+        "name" : "Sexo",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "sexo",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288824,
+        "cachedContents" : {
+          "largest" : "MUJER",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "HOMBRE",
+            "count" : 20
+          }, {
+            "item" : "MUJER",
+            "count" : 19
+          } ],
+          "smallest" : "HOMBRE"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378098528,
+        "name" : "GrupoEtareo",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "grupoetareo",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288816,
+        "cachedContents" : {
+          "largest" : "80 Y MÁS",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "15 A 19",
+            "count" : 20
+          }, {
+            "item" : "20 A 24",
+            "count" : 19
+          }, {
+            "item" : "25 A 29",
+            "count" : 18
+          }, {
+            "item" : "30 A 34",
+            "count" : 17
+          }, {
+            "item" : "35 A 39",
+            "count" : 16
+          }, {
+            "item" : "40 A 44",
+            "count" : 15
+          }, {
+            "item" : "45 A 49",
+            "count" : 14
+          }, {
+            "item" : "50 A 54",
+            "count" : 13
+          }, {
+            "item" : "60 A 64",
+            "count" : 12
+          }, {
+            "item" : "65 A 69",
+            "count" : 11
+          }, {
+            "item" : "70 A 74",
+            "count" : 10
+          }, {
+            "item" : "55 A 59",
+            "count" : 9
+          }, {
+            "item" : "80 Y MÁS",
+            "count" : 8
+          }, {
+            "item" : "75 A 79",
+            "count" : 7
+          } ],
+          "smallest" : "15 A 19"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378098527,
+        "name" : "Victimas",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "victimas",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288815,
+        "cachedContents" : {
+          "largest" : "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV",
+            "count" : 20
+          }, {
+            "item" : "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)",
+            "count" : 19
+          } ],
+          "smallest" : "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378098525,
+        "name" : "PuntajeSISBEN",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "puntajesisben",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288813,
+        "cachedContents" : {
+          "largest" : "SIN PUNTAJE",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "SIN PUNTAJE",
+            "count" : 20
+          }, {
+            "item" : "10,00 A 19,99",
+            "count" : 19
+          }, {
+            "item" : "30,00 A 39,99",
+            "count" : 18
+          }, {
+            "item" : "00,00 A 09,99",
+            "count" : 17
+          }, {
+            "item" : "40,00 A 49,99",
+            "count" : 16
+          }, {
+            "item" : "20,00 A 29,99",
+            "count" : 15
+          }, {
+            "item" : "60,00 A 69,99",
+            "count" : 14
+          }, {
+            "item" : "50,00 A 59,99",
+            "count" : 13
+          }, {
+            "item" : "70,00 A 79,99",
+            "count" : 12
+          } ],
+          "smallest" : "00,00 A 09,99"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378098535,
+        "name" : "Etnia",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "etnia",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288823,
+        "cachedContents" : {
+          "largest" : "NINGUNA",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "NINGUNA",
+            "count" : 20
+          }, {
+            "item" : "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE",
+            "count" : 19
+          }, {
+            "item" : "GITANO O RROM",
+            "count" : 18
+          } ],
+          "smallest" : "GITANO O RROM"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378098531,
+        "name" : "Discapacidad",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "discapacidad",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288819,
+        "cachedContents" : {
+          "largest" : "SI",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "NO",
+            "count" : 20
+          }, {
+            "item" : "SI",
+            "count" : 19
+          } ],
+          "smallest" : "NO"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378098526,
+        "name" : "LGBTI",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "lgbti",
+        "position" : 11,
+        "renderTypeName" : "text",
+        "tableColumnId" : 70288814,
+        "cachedContents" : {
+          "largest" : "NO",
+          "non_null" : 134,
+          "null" : 0,
+          "top" : [ {
+            "item" : "NO",
+            "count" : 20
+          } ],
+          "smallest" : "NO"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 378098532,
+        "name" : "Beneficiarios",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "beneficiarios",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 70288820,
+        "cachedContents" : {
+          "largest" : "4",
+          "non_null" : 134,
+          "average" : "1.223880597014925",
+          "null" : 0,
+          "top" : [ {
+            "item" : "1",
+            "count" : 20
+          }, {
+            "item" : "2",
+            "count" : 19
+          }, {
+            "item" : "3",
+            "count" : 18
+          }, {
+            "item" : "4",
+            "count" : 17
+          } ],
+          "smallest" : "1",
+          "sum" : "164"
+        },
+        "format" : {
+          "align" : "right"
+        }
+      }, {
+        "id" : 378098530,
+        "name" : "Inversion",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "inversion",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 70288818,
+        "cachedContents" : {
+          "largest" : "1600000",
+          "non_null" : 134,
+          "average" : "489552.2388059701",
+          "null" : 0,
+          "top" : [ {
+            "item" : "400000",
+            "count" : 20
+          }, {
+            "item" : "800000",
+            "count" : 19
+          }, {
+            "item" : "1200000",
+            "count" : 18
+          }, {
+            "item" : "1600000",
+            "count" : 17
+          } ],
+          "smallest" : "400000",
+          "sum" : "65600000"
+        },
+        "format" : {
+          "align" : "right"
+        }
+      }, {
+        "id" : 378098534,
+        "name" : "Hectareas",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "hectareas",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 70288822,
+        "cachedContents" : {
+          "largest" : "12.57",
+          "non_null" : 134,
+          "average" : "3.843507462686567",
+          "null" : 0,
+          "top" : [ {
+            "item" : "3.14",
+            "count" : 20
+          }, {
+            "item" : "6.28",
+            "count" : 19
+          }, {
+            "item" : "9.43",
+            "count" : 18
+          }, {
+            "item" : "12.57",
+            "count" : 17
+          } ],
+          "smallest" : "3.14",
+          "sum" : "515.03"
+        },
+        "format" : {
+          "align" : "right"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "custom_fields" : {
+          "Información de la Entidad" : {
+            "Municipio" : "Bogotá D.C.",
+            "Nombre de la Entidad" : "Agencia de Desarrollo Rural",
+            "Orden" : "Nacional",
+            "Sector" : "Agricultura y Desarrollo Rural",
+            "Área o dependencia" : "Dirección de Asistencia Técnica",
+            "Departamento" : "Bogotá D.C."
+          },
+          "Información de Datos" : {
+            "Cobertura Geográfica" : "Nacional",
+            "Idioma" : "Español",
+            "Frecuencia de Actualización" : "Anual",
+            "Fecha Emisión (aaaa-mm-dd)" : "2018-09-01"
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+      },
+      "owner" : {
+        "id" : "7qnn-9hh6",
+        "displayName" : "Datos Abiertos ADR",
+        "profileImageUrlLarge" : "/api/users/7qnn-9hh6/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/7qnn-9hh6/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/7qnn-9hh6/profile_images/TINY",
+        "screenName" : "Datos Abiertos ADR",
+        "type" : "interactive",
+        "userSegment" : "site_member"
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "7qnn-9hh6",
+        "displayName" : "Datos Abiertos ADR",
+        "profileImageUrlLarge" : "/api/users/7qnn-9hh6/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/7qnn-9hh6/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/7qnn-9hh6/profile_images/TINY",
+        "screenName" : "Datos Abiertos ADR",
+        "type" : "interactive",
+        "userSegment" : "site_member"
+      },
+      "tags" : [ "maracuyá", "asistencia técnica agropecuaria", "extensión agropecuaria" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-5mhg-5gpx-8ush", "00000000-0000-0000-4C04-B5ED5EBF5F9D", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "15 A 19", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-cij9~h4e7-fkwa", "00000000-0000-0000-78C1-CAEB0BCA256B", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "20 A 24", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-xbks.hfym-nn4c", "00000000-0000-0000-512E-425604FBCE2D", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "MUJER", "25 A 29", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-c9ad_w464-bma4", "00000000-0000-0000-DAA6-96409F835039", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "00,00 A 09,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-ycbr.tczh~fwr8", "00000000-0000-0000-66AD-BA23786BFFD2", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "25 A 29", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "40,00 A 49,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-96ps.tupj.t8nk", "00000000-0000-0000-9BB9-366DB7932348", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-a56b~army_tt2v", "00000000-0000-0000-5B9E-E9F60DA15ED7", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "00,00 A 09,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-fiu5.b53f-tfyi", "00000000-0000-0000-C774-D381CB27C742", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-hckw.92xf.kh9p", "00000000-0000-0000-4363-417FEFA5D8B9", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "MUJER", "35 A 39", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "30,00 A 39,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-h3xg-brg7.j4ma", "00000000-0000-0000-82E8-BA92C7E0D9FA", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "35 A 39", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "20,00 A 29,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-nxse_88vx~e3q5", "00000000-0000-0000-F5E2-B75D80CC340D", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-jimu-26ah.tfeh", "00000000-0000-0000-1D02-4E4AEC54B5D5", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "35 A 39", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-f8w4-imaf.c8qt", "00000000-0000-0000-231D-0EF707BE3520", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "MUJER", "40 A 44", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "60,00 A 69,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-etxz~epqe.gkzy", "00000000-0000-0000-BDC4-51D7DC4C09AA", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "MUJER", "40 A 44", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "30,00 A 39,99", "GITANO O RROM", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-su6x.5k3q.xcr5", "00000000-0000-0000-CE0B-EF06B1EF860E", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-xmhr-8qd8.uixq", "00000000-0000-0000-AC8F-8616C886B737", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "40 A 44", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "10,00 A 19,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-5iz7_cbh2_dyxv", "00000000-0000-0000-6751-48BD83562BA1", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "50,00 A 59,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-2iaw~s8by~m6y7", "00000000-0000-0000-AA51-4483C301BE8B", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "MUJER", "45 A 49", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-vytw-ctn6~u7s6", "00000000-0000-0000-A2A2-4EF29ECBA65F", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "MUJER", "45 A 49", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "00,00 A 09,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-kjwr~n6p4-5dgh", "00000000-0000-0000-EE58-5CB6A02078AC", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "45 A 49", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-3f7v-5uue_t3mp", "00000000-0000-0000-9190-D75F4DDDD962", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "45 A 49", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "50,00 A 59,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-8nj4-at3w.w9dc", "00000000-0000-0000-8727-5BCE4BC3C629", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "MUJER", "50 A 54", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "20,00 A 29,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-iv68-y3ta_dm58", "00000000-0000-0000-81AD-640E052BD8BD", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "50 A 54", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-fz6h.5fzs_ppwv", "00000000-0000-0000-9494-1CA9316B43DA", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "MUJER", "60 A 64", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-fvtz.uvs7_icwn", "00000000-0000-0000-C1F0-63C42DC844A8", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "MUJER", "60 A 64", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "30,00 A 39,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-kpk9_t37r_xxqk", "00000000-0000-0000-EC9B-AD749257EC15", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "65 A 69", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-guti.mraj_mt3b", "00000000-0000-0000-9710-3170C02EFC20", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "65 A 69", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-49ev-us58~3vub", "00000000-0000-0000-0486-306C493FE600", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "65 A 69", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-ripm.i7pu-e7km", "00000000-0000-0000-E823-92F67A49C0F1", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "70 A 74", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-tabm.y6ru-ny7e", "00000000-0000-0000-0AA8-ADC82FCD4648", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "70 A 74", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "50,00 A 59,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-dkr4.s6yt.37hk", "00000000-0000-0000-A218-3E281887EAB8", 0, 1539127403, null, 1539127403, null, "{ }", "ANTIOQUIA", "CHIGORODÓ", "5172", "MARACUYÁ", "HOMBRE", "70 A 74", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "20,00 A 29,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-q6m4-uxcx-wgme", "00000000-0000-0000-CEF0-90806362685F", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "HOMBRE", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "60,00 A 69,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-zgma_8vkg-ikdv", "00000000-0000-0000-02F8-3EFCF9B48104", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-7mxh~xf3n_3m85", "00000000-0000-0000-A6CC-BB1F862AF985", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-xznu_qm5t~xqey", "00000000-0000-0000-7D30-3DD40C899DF8", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "HOMBRE", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "60,00 A 69,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-i5uj.vm3d~yzns", "00000000-0000-0000-F2C0-BC5916BD444B", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "HOMBRE", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-9jb9~iqab-cyxn", "00000000-0000-0000-40E0-60627F70C0B4", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-mdgt-jap2-39qq", "00000000-0000-0000-FE93-EA67E5C5ED6F", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-x3i4-6zmx-56vb", "00000000-0000-0000-6FA2-2736D5CF9988", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-ru3i_f2m2_c6hu", "00000000-0000-0000-55BF-FCC2D1D24EA6", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "MUJER", "55 A 59", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-9pxf~f39x.34db", "00000000-0000-0000-8A64-7B7A874165E9", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "MUJER", "60 A 64", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-2cfu_5nq9_7t77", "00000000-0000-0000-C2FA-112EAAC6D204", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "HOMBRE", "60 A 64", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-ikfr.9dgn.9sf9", "00000000-0000-0000-7F58-6D43377D9F65", 0, 1539127403, null, 1539127403, null, "{ }", "BOYACÁ", "MIRAFLORES", "15455", "MARACUYÁ", "HOMBRE", "65 A 69", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-m4jt-yjif-t9pi", "00000000-0000-0000-2CE1-8CDC7080DE50", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "HOMBRE", "20 A 24", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-iqh8.6k97.wg9u", "00000000-0000-0000-9FB0-14B16BCB37C6", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "HOMBRE", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "00,00 A 09,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-fj2u~5pab_d2if", "00000000-0000-0000-48E3-2A046C6CE95D", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "MUJER", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-kcmz~3yph.t8cv", "00000000-0000-0000-64C7-BD34E5429CF7", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-y875_8nr7_s254", "00000000-0000-0000-5A94-87418F92D484", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "MUJER", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-fun9~8seb~2znf", "00000000-0000-0000-4328-4AB42ED96B30", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "HOMBRE", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-ewir~k884_8esd", "00000000-0000-0000-B835-0B55F717DDFC", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-3kjc_pr23-av99", "00000000-0000-0000-DBD2-E38AE9ACB326", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "MUJER", "55 A 59", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-z74e_2jpv.i6qq", "00000000-0000-0000-0028-A3FC2C20C19D", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "HOMBRE", "55 A 59", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "00,00 A 09,99", "NINGUNA", "SI", "NO", "1", "400000", "3.14" ]
+, [ "row-csxx_i68y-5fga", "00000000-0000-0000-2D89-0CB0D4A6492D", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "HOMBRE", "55 A 59", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "SI", "NO", "1", "400000", "3.14" ]
+, [ "row-trqc.bd7m-6zf2", "00000000-0000-0000-867A-0ABC150B93F0", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "MUJER", "60 A 64", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-skbu-zbs6.yq3p", "00000000-0000-0000-7474-A9D11362954A", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "ELÍAS", "41244", "MARACUYÁ", "MUJER", "80 Y MÁS", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-va7i-9h5r_hmyp", "00000000-0000-0000-3694-FA7F07882FE7", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GARZÓN", "41298", "MARACUYÁ", "MUJER", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-zh4f_jr4q_ckbe", "00000000-0000-0000-2902-9EDE1AAB07A5", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GARZÓN", "41298", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-vmvq~zusp-aedc", "00000000-0000-0000-7254-E20BEFFEC3F5", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GARZÓN", "41298", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-rafe_wfgr~vcd2", "00000000-0000-0000-66E9-E07CC71B6A16", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GARZÓN", "41298", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-p9rv-bpfz~fmzc", "00000000-0000-0000-478C-41D1F7E87F52", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GARZÓN", "41298", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-wqpg_9ywg_wkhe", "00000000-0000-0000-C5F9-0B4DD4F0865D", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GARZÓN", "41298", "MARACUYÁ", "MUJER", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-z76f.97cg~66zz", "00000000-0000-0000-E9A5-9ECF26EA1324", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GIGANTE", "41306", "MARACUYÁ", "MUJER", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-8s66.9js2.nmfy", "00000000-0000-0000-4B26-786DA5538D58", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GIGANTE", "41306", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "50,00 A 59,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-jssw.5i83_efrk", "00000000-0000-0000-5754-F588519D0E7F", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GIGANTE", "41306", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "00,00 A 09,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-h6zj_vayg-fhzc", "00000000-0000-0000-8632-F81387CAD239", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GIGANTE", "41306", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-t3vc_by6c-j95e", "00000000-0000-0000-9102-A69B5DD98DFE", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GIGANTE", "41306", "MARACUYÁ", "HOMBRE", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NEGRO, MULATO, AFROCOLOMBIANO O AFRODESCENDIENTE", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-2bux-x64z-ne6t", "00000000-0000-0000-844B-5ED9C75BD37F", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GIGANTE", "41306", "MARACUYÁ", "HOMBRE", "60 A 64", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-gdss.jzg3-4zx7", "00000000-0000-0000-669A-2217472DF406", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-s5ce_ks7e-bjzv", "00000000-0000-0000-6B4F-F1EA6403AD45", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-23k3-z6ib-h5mp", "00000000-0000-0000-64C2-3E5F1832882C", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-zu7i_9c32.3cia", "00000000-0000-0000-3F92-D3199B33E8CC", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "30 A 34", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-r83n.yang.w46z", "00000000-0000-0000-C1B5-F29AD686E84E", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-uhih_gwiq-cjrb", "00000000-0000-0000-9B60-327D075EC93F", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "00,00 A 09,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-x34j-dxhs.9xfa", "00000000-0000-0000-0E2B-0EC03F4E8D56", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "35 A 39", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-zjym.eewr~kv7j", "00000000-0000-0000-760A-4BF7F0D9F9CF", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-tatd~af26~enr7", "00000000-0000-0000-3D08-8708731AF00F", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "3", "1200000", "9.43" ]
+, [ "row-cnua-mdue-hzi9", "00000000-0000-0000-77FB-3C787A99FF2E", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "3", "1200000", "9.43" ]
+, [ "row-qkam.3i3d-sqtu", "00000000-0000-0000-3C88-BDB7F75134E7", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "MUJER", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-evwf~e7mc~n4ey", "00000000-0000-0000-542A-56247FD348FB", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-sn2d.h77v_rxfy", "00000000-0000-0000-AFE4-CB44859CF0F9", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "00,00 A 09,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-zbqh~uebw.z6wm", "00000000-0000-0000-3DAB-029442E304FE", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-9gej-9j3j~ijzp", "00000000-0000-0000-8DAB-6017412BB53D", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-7zpk~t9mf~529d", "00000000-0000-0000-5EF6-C133D026D875", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-brwp.rqps-c6xy", "00000000-0000-0000-2722-34C34F622EF1", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "MUJER", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-7f3v.bfw9~nrxq", "00000000-0000-0000-82B2-86D17A98362C", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "MUJER", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-86ks.qunw.2x6x", "00000000-0000-0000-ACE3-A29F1B8E2A20", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-ez6k~jzkf_5hh7", "00000000-0000-0000-0634-5B9176FD3729", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "45 A 49", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-i2gf-qv4n~4rpw", "00000000-0000-0000-8A14-DDDA7FB6B663", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "MUJER", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-vq7q-hdfa-dzb3", "00000000-0000-0000-24F3-E445747DB205", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "MUJER", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "50,00 A 59,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-ewq4.gp5p.v2u2", "00000000-0000-0000-C8EF-D606ECB764F7", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "MUJER", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-q5hs~i7rd~trpj", "00000000-0000-0000-FDBF-88B39B35EEDA", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-db33~s58g.fqfq", "00000000-0000-0000-C075-1E6637E4E0EA", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-7qsu_bdi4_n39i", "00000000-0000-0000-50A7-FD36AD0A2A73", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "3", "1200000", "9.43" ]
+, [ "row-mqe4~8yjz.kwsf", "00000000-0000-0000-09B5-61D8E47CAFD2", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-gixa-yffu~v7h2", "00000000-0000-0000-7185-AF2B256B6352", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "50 A 54", "INCLUIDO EN EL REGISTRO ÚNICO DE VÍCTIMAS (RUV)", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-dk2g_6msv~p2c5", "00000000-0000-0000-4CAC-B2D0C8CD3569", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "MUJER", "55 A 59", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-kre2_ya9v.ikxu", "00000000-0000-0000-25F7-02E28E484105", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "55 A 59", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-uu6f~4mdr~p37v", "00000000-0000-0000-6C8B-241941559480", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "55 A 59", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-nqyq.xs7f_xryk", "00000000-0000-0000-D595-59D820B5B8AA", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "60 A 64", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-nnda.g3k2~eftk", "00000000-0000-0000-9D90-FD707B4A9D91", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "60 A 64", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "60,00 A 69,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-t5ke_v99f_zr7a", "00000000-0000-0000-06C0-BD46BD05231A", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "60 A 64", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-5ei9.b45i.6wjk", "00000000-0000-0000-0A0C-CB237570B051", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "65 A 69", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-6zn4~knjk_rtz2", "00000000-0000-0000-A364-6781622F4500", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "MUJER", "75 A 79", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-hmkc-9s4x~iwnz", "00000000-0000-0000-B56D-02AD5821D091", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "GUADALUPE", "41319", "MARACUYÁ", "HOMBRE", "80 Y MÁS", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-a4rb_gss6~c6pj", "00000000-0000-0000-46D1-4E4E3345F19A", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "LA PLATA", "41396", "MARACUYÁ", "HOMBRE", "15 A 19", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-gpr7_nxa6.nest", "00000000-0000-0000-E4B7-DB94AC4D3618", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "LA PLATA", "41396", "MARACUYÁ", "MUJER", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-82j8_2qgq_khu4", "00000000-0000-0000-98F4-4B4EF65A23CD", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "LA PLATA", "41396", "MARACUYÁ", "MUJER", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-s4yd-xgtc~excb", "00000000-0000-0000-0A5E-F2D24DD743D3", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "LA PLATA", "41396", "MARACUYÁ", "HOMBRE", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-dh7c_wa3h~vh9x", "00000000-0000-0000-C318-A7928676C7BF", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "MUJER", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-gx3x_8gi7~kuep", "00000000-0000-0000-50E0-9253ACC821FF", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "25 A 29", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-vnda_tfd9-z3pf", "00000000-0000-0000-7937-DA6D646BD8A7", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "3", "1200000", "9.43" ]
+, [ "row-i9tf_avcj.pxf5", "00000000-0000-0000-F414-248D954C4447", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "30 A 34", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-gnk6~y9hi~9br7", "00000000-0000-0000-1F27-F5C3A291DD1D", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "MUJER", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-mmca-4mhu.y7v3", "00000000-0000-0000-A8FA-F08E6E727037", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "4", "1600000", "12.57" ]
+, [ "row-7cnp~t95n~4smr", "00000000-0000-0000-5FC2-8E7A71050127", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-9qbj~cavt~qyps", "00000000-0000-0000-BA58-589C6966505E", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "35 A 39", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "4", "1600000", "12.57" ]
+, [ "row-ayvz.zqqs.pidc", "00000000-0000-0000-2961-A8D88C19F7E9", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "4", "1600000", "12.57" ]
+, [ "row-k3d8~k24a_y6sg", "00000000-0000-0000-9C7A-811B7D4DC97F", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-s8ee.87u4-i826", "00000000-0000-0000-6766-CBBAE672999E", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "40 A 44", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "00,00 A 09,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-h3wr_pkhk~wb2a", "00000000-0000-0000-459D-1F80614EF4C3", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-7qa4-p2tu_iidr", "00000000-0000-0000-1A05-89156385D99B", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-jkck.f85d.nthm", "00000000-0000-0000-F449-D8AE3DDB1F8F", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "45 A 49", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-g93u_wcwf_rn8w", "00000000-0000-0000-0685-2C658EC4E689", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "MUJER", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-f8di.naub~ueuy", "00000000-0000-0000-2BBB-38A7A6F70DD4", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "SIN PUNTAJE", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-kjzk-yj43-ryh6", "00000000-0000-0000-E0FA-FB7079898129", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "20,00 A 29,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-9z32_5wex.sg78", "00000000-0000-0000-2B4F-7B7B64162706", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-b7hx_rrky~jpex", "00000000-0000-0000-1A70-DC7D1E4E737E", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "70,00 A 79,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-ccib.862e.ky2t", "00000000-0000-0000-DD33-9E9FC3003142", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "50 A 54", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-g7bz~yif7_g2bz", "00000000-0000-0000-7C7C-30B8B36A2985", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "MUJER", "55 A 59", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-36a4.39wm~annp", "00000000-0000-0000-4F63-DC07D5126E92", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "55 A 59", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "40,00 A 49,99", "NINGUNA", "NO", "NO", "2", "800000", "6.28" ]
+, [ "row-z99b_dbmd.n2ra", "00000000-0000-0000-0A22-4F296F72BA30", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "55 A 59", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-mqer-4pku-pg4w", "00000000-0000-0000-21BD-4CF0C0C6A9F8", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "MUJER", "60 A 64", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "70,00 A 79,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-m88g_dcdy-fqvf", "00000000-0000-0000-5D0D-AFC31D42ADA1", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "60 A 64", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "30,00 A 39,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+, [ "row-3et3-25ga.utj4", "00000000-0000-0000-4798-905954062796", 0, 1539127403, null, 1539127403, null, "{ }", "HUILA", "SUAZA", "41770", "MARACUYÁ", "HOMBRE", "65 A 69", "NO COINCIDE, NO ENCONTRADO, O NO INCLUIDO EN EL RUV", "10,00 A 19,99", "NINGUNA", "NO", "NO", "1", "400000", "3.14" ]
+ ]
+}

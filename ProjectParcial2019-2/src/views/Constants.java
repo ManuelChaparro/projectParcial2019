@@ -6,7 +6,15 @@ import java.awt.Font;
 public class Constants {
 	
 	//Constants for text
-	public static final String TITLE_WINDOW = "AVOCADO_REGISTER";
+	
+	public static final String WRITING_BLACKBERRY = "Writing data blackberry";
+	public static final String WRITING_STRAWBERRY = "Writing data strawberry";
+	public static final String WRITING_LULO = "Writing data lulo";
+	public static final String WRITING_BANANA = "Writing data banana";
+	public static final String WRITING_PASSION_FRUIT = "Writing data passion fruit";
+	public static final String WRITING_PEACH = "Writing data peach";
+	
+	public static final String TITLE_WINDOW = "FRUIT_REGISTER";
 	public static final String TITLE_DIALOG_NEW = "NEW_FILE";
 	public static final String TITLE_DIALOG_GRAPHIC = "GRAPHIC";
 	public static final String TITLE_ADD_NEW_CHAIN = "ADD_NEW_CHAIN";
@@ -21,31 +29,29 @@ public class Constants {
 	public static final String OPTION_CHANGE_L_SPANISH = "CHANGE_L_SPANISH";
 	public static final String OPTION_CHANGE_L_ENGLISH = "CHANGE_L_ENGLISH";
 	
-	public static final String ID_DEPARTMENT = "ID_DEPARTMENT";
+	public static final String NAME = "NAME";
 	public static final String DEPARTMENT = "DEPARTMENT";
 	public static final String ID_TOWN = "ID_TOWN";
 	public static final String TOWN = "TOWN";
-	public static final String PERIOD = "PERIOD";
-	public static final String SWON_AREA = "SWON_AREA";
-	public static final String HARVESTED_AREA = "HARVESTED_AREA";
-	public static final String PRODUCTION = "PRODUCTION";
-	public static final String PERFORMANCE = "PERFORMANCE";
-	public static final String PHYSICAL_STATE = "PHYSICAL_STATE";
+	public static final String GENDER = "GENDER";
+	public static final String AGE_GROUP = "AGE_GROUP";
+	public static final String BENEFICIARIES = "BENEFICIARIES";
+	public static final String INVESTMENT = "INVESTMENT";
+	public static final String HECTARE = "HECTARE";
 	
 	public static final String STATE_FRUIT_EXCELENT = "FRESH_FRUIT";
 	public static final String STATE_FRUIT_BAD = "BAD_FRUIT";
 	
 	//Headers for table
-	public static final String H_ID_DEPARTMENT= "H_ID_DEPARTMENT";
+	public static final String H_NAME= "H_NAME";
 	public static final String H_DEPARTMENT= "H_DEPARTMENT";
-	public static final String H_ID_TOWN= "H_ID_TOWN";
 	public static final String H_TOWN= "H_TOWN";
-	public static final String H_SOWN_AREA= "H_SOWN_AREA";
-	public static final String H_HARVESTED_AREA= "H_HARVESTED_AREA";
-	public static final String H_PRODUCTION= "H_PRODUCTION";
-	public static final String H_PERFORMANCE= "H_PERFORMANCE";
-	public static final String H_PHYSICAL_STATE= "H_PHYSICAL_STATE";
-	public static final String H_PERIOD= "H_PERIOD";
+	public static final String H_ID_TOWN= "H_ID_TOWN";
+	public static final String H_GENDER= "H_GENDER";
+	public static final String H_AGE_GROUP= "H_AGE_GROUP";
+	public static final String H_BENEFICIARIES= "H_BENEFICIARIES";
+	public static final String H_INVESTMENT= "H_INVESTMENT";
+	public static final String H_HECTARE= "H_HECTARE";
 	
 	//Constants for Errors
 	public static final String FILE_NOT_FOUND = "ERROR_NAME_FILE_CONFIG";
@@ -59,8 +65,25 @@ public class Constants {
 	public static final String PATH_ICON_FRAME = "/resource/iconFrame.png";
 	public static final String PATH_ICON_ACCEPT = "/resource/iconAccept.png";
 	public static final String PATH_ICON_CANCEL = "/resource/iconCancel.png";
-	public static final String PATH_LOCAL_FILE = "resource/avocadosData.AVOCADOS";
-	public static final String PATH_URL_FILE = "https://www.datos.gov.co/api/views/ddse-euqv/rows.json?accessType=DOWNLOAD";
+	public static final String PATH_LOCAL_FILE_BLACKBERRY = "resource/blackberry.INFO";
+	public static final String PATH_LOCAL_FILE_STRAWBERRY = "resource/strawberry.INFO";
+	public static final String PATH_LOCAL_FILE_LULO = "resource/lulo.INFO";
+	public static final String PATH_LOCAL_FILE_BANANA = "resource/banana.INFO";
+	public static final String PATH_LOCAL_FILE_PASSION_FRUIT = "resource/passion_fruit.INFO";
+	public static final String PATH_LOCAL_FILE_PEACH = "resource/peach.INFO";
+	public static final String PATH_IMAGE_BLACKBERRY = "/resource/iconBlackberry.png";
+	public static final String PATH_IMAGE_STRAWBERRY = "/resource/iconStrawberry.png";
+	public static final String PATH_IMAGE_LULO = "/resource/iconLulo.png";
+	public static final String PATH_IMAGE_BANANA = "/resource/iconBanana.png";
+	public static final String PATH_IMAGE_PASSION_FRUIT = "/resource/iconPassionFruit.png";
+	public static final String PATH_IMAGE_PEACH = "/resource/iconPeach.png";
+
+	public static final String PATH_URL_FILE_BLACKBERRY = "https://www.datos.gov.co/api/views/5sr3-8337/rows.json?accessType=DOWNLOAD";
+	public static final String PATH_URL_FILE_STRAWBERRY = "https://www.datos.gov.co/api/views/8yeg-vys5/rows.json?accessType=DOWNLOAD";
+	public static final String PATH_URL_FILE_LULO = "https://www.datos.gov.co/api/views/wqdv-y78j/rows.json?accessType=DOWNLOAD";
+	public static final String PATH_URL_FILE_BANANA = "https://www.datos.gov.co/api/views/66u3-7nne/rows.json?accessType=DOWNLOAD";
+	public static final String PATH_URL_FILE_PASSION_FRUIT = "https://www.datos.gov.co/api/views/cjjs-6r5i/rows.json?accessType=DOWNLOAD";
+	public static final String PATH_URL_FILE_PEACH = "https://www.datos.gov.co/api/views/7xnk-585m/rows.json?accessType=DOWNLOAD";
 	public static final String NAME_FILE_CONFIG = "config.init";
 	
 	public static final String PATH_HAN_LEN_SPANISH = "language/language_spanish.properties";

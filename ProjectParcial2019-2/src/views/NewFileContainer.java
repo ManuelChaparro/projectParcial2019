@@ -45,7 +45,7 @@ public class NewFileContainer extends JPanel{
 	private void initComponents(Controller controller) {
 		
 		//Components department
-		LIdDepartament = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.ID_DEPARTMENT), Color.WHITE, Color.WHITE, Constants.DEFAULT_FONT);
+		LIdDepartament = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.NAME), Color.WHITE, Color.WHITE, Constants.DEFAULT_FONT);
 		idDepartment = new TextFieldObject();
 		idDepartment.setEnabled(false);
 		setIdDepartment();
@@ -132,7 +132,7 @@ public class NewFileContainer extends JPanel{
 
 
 	public void changeLanguage() {
-		LIdDepartament.setText(HandlerLanguage.languageProperties.getProperty(Constants.ID_DEPARTMENT));
+		LIdDepartament.setText(HandlerLanguage.languageProperties.getProperty(Constants.NAME));
 		LDepartaments.setText(HandlerLanguage.languageProperties.getProperty(Constants.DEPARTMENT));
 		LIdTown.setText(HandlerLanguage.languageProperties.getProperty(Constants.ID_TOWN));
 		LTown.setText(HandlerLanguage.languageProperties.getProperty(Constants.TOWN));
