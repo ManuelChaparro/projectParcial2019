@@ -25,15 +25,15 @@ public class DeleteChain extends JPanel {
 	private static final long serialVersionUID = 1L;
 	private PanelTable table;
 	private Gender gender;
+	private Fruits fruit;
 	private PanelObject containerAgeGroup, containerSisbenScore, containerNotice, containerButtons;
 	private JSpinner ageOne, ageTwo, sisbenOne, sisbenTwo;
 	private SpinnerNumberModel ageOneModel, ageTwoModel, sisbenOneModel, sisbenTwoModel;
-	private JPanel containerFields, north, center, south, titlePanel, containerOptions;
-	private LabelObject notice, toAge, toSisben, title, titleDepartment, titleIdTown, titleTown, titleGender, titleAgeGroup,
-			titleSisbenScore, titleBeneficiaries, titleInvestment, titleHectare, infoFruit, infoDepartment, infoIdTown, infoTown,
-			infoGender, infoAgeGroup, infoBeneficiaries, infoInvestment, infoHectare;
-	private TextFieldObject idTown, ageGroup, sisbenScore, beneficiaries, investment, hectare;
-	private ButtonObject accept, cancel;
+	private JPanel containerFields, north, center, south, titlePanel;
+	private LabelObject notice, toAge, toSisben, title, titleFruit, titleIdTown, titleGender, titleAgeGroup,
+			titleSisbenScore, titleBeneficiaries, titleInvestment, titleHectare;
+	private TextFieldObject  idTown, ageGroup, sisbenScore, beneficiaries, investment, hectare;
+	private ButtonObject search, accept, cancel;
 
 
 	public DeleteChain(Controller controller) {
@@ -51,10 +51,14 @@ public class DeleteChain extends JPanel {
 		createTextFields(controller);
 		createComponentsNorth();
 		createComponentsCenter(controller);
-//		createComponentsSouth(controller);
+		createComponentsSouth(controller);
 	}
 
-	private void createTextFields(Controller controller) {		
+	private void createTextFields(Controller controller) {	
+		fruit = new Fruits(controller);
+		fruit.setBorder(null);
+		fruit.setBackground(Constants.RED_COLOR);
+		
 		idTown = new TextFieldObject();
 		idTown.setText("0");
 		
@@ -128,28 +132,22 @@ public class DeleteChain extends JPanel {
 		hectare.setText("0");
 	}
 
-//	private void createComponentsSouth(Controller controller) {
-//		Image imageAccept = new ImageIcon(getClass().getResource(Constants.PATH_ICON_ACCEPT)).getImage();
-//		Icon rescaledAccept = new ImageIcon(imageAccept.getScaledInstance(35, 35, Image.SCALE_SMOOTH));
-//		accept = new ButtonObject("", Color.WHITE, rescaledAccept, controller, Commands.ACCEPT_BUTTON_DELETE.name(),
-//				Constants.DEFAULT_FONT);
-//
-//		Image imageCancel = new ImageIcon(getClass().getResource(Constants.PATH_ICON_CANCEL)).getImage();
-//		Icon rescaledCancel = new ImageIcon(imageCancel.getScaledInstance(35, 35, Image.SCALE_SMOOTH));
-//		cancel = new ButtonObject("", Color.WHITE, rescaledCancel, controller, Commands.CANCEL_BUTTON_DELETE.name(),
-//				Constants.DEFAULT_FONT);
-//
-//		south.add(accept, BorderLayout.EAST);
-//		south.add(cancel, BorderLayout.WEST);
-//	}
+	private void createComponentsSouth(Controller controller) {		
+		containerNotice = new PanelObject(new FlowLayout(), Constants.RED_COLOR);
+		
+		containerNotice.add(notice);
+		
+		south.add(containerNotice, BorderLayout.NORTH);
+		south.add(accept, BorderLayout.EAST);
+		south.add(cancel, BorderLayout.WEST);
+		south.setVisible(false);
+		add(south);
+	}
 
 	private void createComponentsCenter(Controller controller) {
 		table = new PanelTable(controller);
 		table.setPreferredSize(new Dimension((int) (Constants.WIDTH*0.85), (int) (Constants.HEIGTH*0.4)));
 		center.add(table, BorderLayout.CENTER);
-		containerNotice.add(notice);
-		containerNotice.setVisible(false);
-		center.add(containerNotice, BorderLayout.SOUTH);
 		add(center);
 	}
 
@@ -164,6 +162,8 @@ public class DeleteChain extends JPanel {
 		containerFields.setPreferredSize(new Dimension(Constants.WIDTH, (int) (Constants.HEIGTH*0.15)));
 		containerFields.setBackground(Constants.RED_COLOR);
 		
+		containerFields.add(titleFruit);
+		containerFields.add(fruit);
 		containerFields.add(titleIdTown);
 		containerFields.add(idTown);
 		containerFields.add(titleGender);
@@ -186,7 +186,7 @@ public class DeleteChain extends JPanel {
 
 		north.add(titlePanel, BorderLayout.NORTH);
 		north.add(containerFields, BorderLayout.CENTER);
-		north.add(containerButtons, BorderLayout.SOUTH);
+		north.add(search, BorderLayout.SOUTH);
 		
 		add(north);
 	}
@@ -194,10 +194,8 @@ public class DeleteChain extends JPanel {
 	private void createTitles(Controller controller) {
 		title = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.TITLE_DELETE_CHAIN),
 				Color.WHITE, Color.WHITE, Constants.DEFAULT_FONT_MAX);
-		titleDepartment = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.DEPARTMENT), Color.WHITE,
-				Color.WHITE, Constants.DEFAULT_FONT);
-		titleTown = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.TOWN), Color.WHITE,
-				Color.WHITE, Constants.DEFAULT_FONT);
+		titleFruit = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.NAME),
+				Color.WHITE, Color.WHITE, Constants.DEFAULT_FONT_MAX);
 		titleIdTown = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.ID_TOWN), Color.WHITE,
 				Color.WHITE, Constants.DEFAULT_FONT);
 		titleAgeGroup = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.AGE_GROUP),
@@ -212,34 +210,28 @@ public class DeleteChain extends JPanel {
 				Color.WHITE, Color.WHITE, Constants.DEFAULT_FONT);
 		titleHectare = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.HECTARE), Color.WHITE,
 				Color.WHITE, Constants.DEFAULT_FONT);
-
-		infoFruit = new LabelObject("", Color.WHITE, Color.BLACK, Constants.DEFAULT_FONT);
-		infoDepartment = new LabelObject("", Color.WHITE, Color.BLACK, Constants.DEFAULT_FONT);
-		infoTown = new LabelObject("", Color.WHITE, Color.BLACK, Constants.DEFAULT_FONT);
-		infoIdTown = new LabelObject("", Color.WHITE, Color.BLACK, Constants.DEFAULT_FONT);
-		infoAgeGroup = new LabelObject("", Color.WHITE, Color.BLACK, Constants.DEFAULT_FONT);
-		infoGender = new LabelObject("", Color.WHITE, Color.BLACK, Constants.DEFAULT_FONT);
-		infoBeneficiaries = new LabelObject("", Color.WHITE, Color.BLACK, Constants.DEFAULT_FONT);
-		infoInvestment = new LabelObject("", Color.WHITE, Color.BLACK, Constants.DEFAULT_FONT);
-		infoHectare = new LabelObject("", Color.WHITE, Color.BLACK, Constants.DEFAULT_FONT);
 		
-		notice = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.ERROR_STRING), Constants.RED_COLOR,
+		notice = new LabelObject(HandlerLanguage.languageProperties.getProperty(Constants.NOTICE_DELETE_FILE), Constants.RED_COLOR,
 				Color.WHITE, Constants.DEFAULT_FONT);
 		
-		// Buttons accept and cancel
+		// Button search
 		Image imageSearch = new ImageIcon(getClass().getResource(Constants.PATH_ICON_SEARCH)).getImage();
 		Icon rescaledSearch = new ImageIcon(imageSearch.getScaledInstance((int) (Constants.WIDTH * 0.03),
 				(int) (Constants.WIDTH * 0.03), Image.SCALE_SMOOTH));
-		accept = new ButtonObject("", Color.WHITE, rescaledSearch, controller, Commands.SEARCH_DELETE.name(),
+		search = new ButtonObject("", Color.WHITE, rescaledSearch, controller, Commands.SEARCH_DELETE.name(),
 				Constants.DEFAULT_FONT);
-
+		
+		Image imageAccept = new ImageIcon(getClass().getResource(Constants.PATH_ICON_ACCEPT)).getImage();
+		Icon rescaledAccept = new ImageIcon(imageAccept.getScaledInstance((int) (Constants.WIDTH * 0.03),
+				(int) (Constants.WIDTH * 0.03), Image.SCALE_SMOOTH));
+		accept = new ButtonObject("", Color.WHITE, rescaledAccept, controller, Commands.ACCEPT_BUTTON_DELETE.name(),
+				Constants.DEFAULT_FONT);
+		
 		Image imageCancel = new ImageIcon(getClass().getResource(Constants.PATH_ICON_CANCEL)).getImage();
 		Icon rescaledCancel = new ImageIcon(imageCancel.getScaledInstance((int) (Constants.WIDTH * 0.03),
 				(int) (Constants.WIDTH * 0.03), Image.SCALE_SMOOTH));
-		cancel = new ButtonObject("", Color.WHITE, rescaledCancel, controller, Commands.CANCEL_BUTTON_CHAIN.name(),
+		cancel = new ButtonObject("", Color.WHITE, rescaledCancel, controller, Commands.CANCEL_BUTTON_DELETE.name(),
 				Constants.DEFAULT_FONT);
-		
-		containerButtons = new PanelObject(Constants.RED_COLOR, accept, cancel);
 	}
 
 	private void createPanels() {
@@ -252,59 +244,49 @@ public class DeleteChain extends JPanel {
 		center = new JPanel();
 		center.setBackground(Color.WHITE);
 		center.setLayout(new BorderLayout());
-		
-		containerNotice = new PanelObject(new FlowLayout(), Constants.RED_COLOR);
 
-//		south = new JPanel();
-//		south.setLayout(new FlowLayout(0, 170, 8));
-//		south.setBackground(Constants.RED_COLOR);
+		south = new JPanel();
+		south.setLayout(new FlowLayout());
+		south.setBackground(Color.WHITE);
 
 	}
 
 	public Object[] getInfoDelete() {
-		Object[] data = new Object[9];
-		data[0] = idTown.getText();
-		data[1] = gender.getSelectedItem();
-		data[2] = ageOne.getValue();
-		data[3] = ageTwo.getValue();
-		data[4] = sisbenOne.getValue();
-		data[5] = sisbenTwo.getValue();
-		data[6] = beneficiaries.getText();
-		data[7] = investment.getText();
-		data[8] = hectare.getText();
+		Object[] data = new Object[10];
+		data[0] = fruit.getSelectedItem();
+		data[1] = idTown.getText();
+		data[2] = gender.getSelectedItem();
+		data[3] = ageOne.getValue();
+		data[4] = ageTwo.getValue();
+		data[5] = sisbenOne.getValue();
+		data[6] = sisbenTwo.getValue();
+		data[7] = beneficiaries.getText();
+		data[8] = investment.getText();
+		data[9] = hectare.getText();
 		return data;
 	}
-//
-//	public void setTextDelete(Object[] itemToDelete) {
-//		infoIdDepartment.setText(String.valueOf(itemToDelete[0]));
-//		infoDepartment.setText((String) itemToDelete[1]);
-//		infoIdTown.setText(String.valueOf(itemToDelete[2]));
-//		infoTown.setText((String) itemToDelete[3]);
-//		infoSwonArea.setText(String.valueOf(itemToDelete[4]));
-//		infoHarvestedArea.setText(String.valueOf(itemToDelete[5]));
-//		infoProduction.setText(String.valueOf(itemToDelete[6]));
-//		infoPerformance.setText(String.valueOf(itemToDelete[7]));
-//		infoPhysicalState.setText((String) itemToDelete[8]);
-//		infoPeriod.setText(String.valueOf(itemToDelete[9]));
-//	}
-//
-//	public void clearData() {
-//		writeTown.setText("");
-//		writePeriod.setText("");
-//		infoIdDepartment.setText("...");
-//		infoDepartment.setText("...");
-//		infoIdTown.setText("...");
-//		infoTown.setText("...");
-//		infoSwonArea.setText("...");
-//		infoHarvestedArea.setText("...");
-//		infoProduction.setText("...");
-//		infoPerformance.setText("...");
-//		infoPhysicalState.setText("...");
-//		infoPeriod.setText("...");
-//	}
+
+	public void changeLanguage() {
+		title.setText(HandlerLanguage.languageProperties.getProperty(Constants.TITLE_DELETE_CHAIN));
+		titleFruit.setText(HandlerLanguage.languageProperties.getProperty(Constants.NAME));
+		titleIdTown.setText(HandlerLanguage.languageProperties.getProperty(Constants.ID_TOWN));
+		titleAgeGroup.setText(HandlerLanguage.languageProperties.getProperty(Constants.AGE_GROUP));
+		titleSisbenScore.setText(HandlerLanguage.languageProperties.getProperty(Constants.SISBEN_SCORE));
+		titleGender.setText(HandlerLanguage.languageProperties.getProperty(Constants.GENDER));
+		titleBeneficiaries.setText(HandlerLanguage.languageProperties.getProperty(Constants.BENEFICIARIES));
+		titleInvestment.setText(HandlerLanguage.languageProperties.getProperty(Constants.INVESTMENT));
+		titleHectare.setText(HandlerLanguage.languageProperties.getProperty(Constants.HECTARE));
+		notice.setText(HandlerLanguage.languageProperties.getProperty(Constants.NOTICE_DELETE_FILE));
+		table.changeLenguage();
+	}
 
 	public void setNewTable(Object[][] newFruitData) {
 		table.setNewTable(newFruitData);
+		
+	}
+
+	public void setVisibleDelete() {
+		south.setVisible(true);
 		
 	}
 

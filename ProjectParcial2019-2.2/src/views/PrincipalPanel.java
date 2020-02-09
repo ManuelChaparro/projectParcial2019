@@ -117,5 +117,9 @@ public class PrincipalPanel extends JPanel{
 	public Object[] getInfoDelete() {
 		return cardLayout.getInfoDelete();
 	}
+
+	public void setVisibleDelete() {
+		cardLayout.setVisibleDelete();
+	}
 	
 }

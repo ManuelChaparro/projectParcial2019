@@ -78,6 +78,7 @@ public class PanelCardLayout extends JPanel{
 	public void changeLenguage() {
 		table.changeLenguage();	
 		newFile.changeLanguage();
+		deleteFile.changeLanguage();
 	}
 
 	public void setNewHome(String pathImageBanana) {
@@ -104,6 +105,11 @@ public class PanelCardLayout extends JPanel{
 
 	public Object[] getInfoDelete() {
 		return deleteFile.getInfoDelete();
+	}
+
+	public void setVisibleDelete() {
+		deleteFile.setVisibleDelete();
+		
 	}
 	
 	

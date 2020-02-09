@@ -161,7 +161,7 @@ public class NewFileContainer extends JPanel {
 		sisbenTwoModel = new SpinnerNumberModel();
 		sisbenTwoModel.setMinimum(0);
 		sisbenTwoModel.setMaximum(100);
-		sisbenTwoModel.setValue(49);
+		sisbenTwoModel.setValue(50);
 		sisbenTwoModel.setStepSize(10);
 		sisbenTwo.setFont(Constants.DEFAULT_FONT);
 		sisbenTwo.setModel(sisbenTwoModel);
@@ -201,6 +201,7 @@ public class NewFileContainer extends JPanel {
 		LTown.setText(HandlerLanguage.languageProperties.getProperty(Constants.TOWN));
 		LGender.setText(HandlerLanguage.languageProperties.getProperty(Constants.GENDER));
 		LAgeGroup.setText(HandlerLanguage.languageProperties.getProperty(Constants.AGE_GROUP));
+		LSisbenScore.setText(HandlerLanguage.languageProperties.getProperty(Constants.SISBEN_SCORE));
 		toAge.setText(HandlerLanguage.languageProperties.getProperty(Constants.TO));
 		LBeneficiaries.setText(HandlerLanguage.languageProperties.getProperty(Constants.BENEFICIARIES));
 		LInvestment.setText(HandlerLanguage.languageProperties.getProperty(Constants.INVESTMENT));

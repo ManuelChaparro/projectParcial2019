@@ -20,6 +20,7 @@ public class Controller implements ActionListener {
 	private ViewsUtilities viewsUtilities;
 	private Chain chain;
 	private String fruitSelected;
+	private int fruitDelete;
 
 	public Controller() {
 		viewsUtilities = new ViewsUtilities();
@@ -170,11 +171,17 @@ public class Controller implements ActionListener {
 			window.getPanelCardLayout().add(window.getPanelDelete());
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
-
 			break;
 
 		case ACCEPT_BUTTON_DELETE:
-
+			chain.deleteFruit(fruitDelete);
+			Object[][] fruitList = chain.getFruitListWithName(fruitSelected);
+			window.getPanelCardLayout().removeAll();
+			window.getPanelCardLayout().add(window.getPanelTable());
+			window.getPanelCardLayout().repaint();
+			window.getPanelCardLayout().revalidate();
+			window.setNewTable(fruitList);
+			System.out.println(chain.getArrayListSize());
 			break;
 
 		case CANCEL_BUTTON_DELETE:
@@ -186,6 +193,7 @@ public class Controller implements ActionListener {
 			break;
 
 		case SEARCH_DELETE:
+			System.out.println(chain.getArrayListSize());
 			searchDelete();
 			break;
 		case BLACKBERRY_BUTTON:
@@ -292,42 +300,48 @@ public class Controller implements ActionListener {
 
 	private void searchDelete() {
 		ArrayList<Fruit> fruitList = chain.getFruitsList();
+		int count = 0;
+		int index = 0;
 		try {
 			Object[] data = window.getInfoDelete();
 			Object[][] itemToDelete = new Object[fruitList.size()][10];
-			int idTown = Integer.parseInt((String) data[0]);
-			String gender = (String) data[1];
-			String ageGroup = viewsUtilities.setToForNumbersAge(data[2], data[3]);
-			String sisbenScore = viewsUtilities.setToForNumbersSisben(data[4], data[5]);
-			int beneficiaries = Integer.parseInt((String) data[6]);
-			double investment = Double.parseDouble((String) data[7]);
-			double hectare = Double.parseDouble((String) data[8]);
+			String fruit = (String) data[0];
+			int idTown = Integer.parseInt((String) data[1]);
+			String gender = (String) data[2];
+			String ageGroup = viewsUtilities.setToForNumbersAge(data[3], data[4]);
+			String sisbenScore = viewsUtilities.setToForNumbersSisben(data[5], data[6]);
+			int beneficiaries = Integer.parseInt((String) data[7]);
+			double investment = Double.parseDouble((String) data[8]);
+			double hectare = Double.parseDouble((String) data[9]);
 
-			int count = 0;
-			for (int i = 0; i < fruitList.size(); i++) {
-				if (idTown == fruitList.get(i).getIdTown() 
-						&& fruitList.get(i).getGender().equalsIgnoreCase(gender)
-						&& ageGroup.equalsIgnoreCase(fruitList.get(i).getAgeGroup())
-						&& sisbenScore.equalsIgnoreCase(fruitList.get(i).getSisbenScore())
-						&& beneficiaries == fruitList.get(i).getBeneficiaries()
-						&& investment == fruitList.get(i).getInvestment() 
-						&& hectare == fruitList.get(i).getHectare()) {
 
-					itemToDelete[count][0] = fruitList.get(i).getName();
-					itemToDelete[count][1] = fruitList.get(i).getDepartment();
-					itemToDelete[count][2] = fruitList.get(i).getIdTown();
-					itemToDelete[count][3] = fruitList.get(i).getTown();
-					itemToDelete[count][4] = fruitList.get(i).getGender();
-					itemToDelete[count][5] = fruitList.get(i).getAgeGroup();
-					itemToDelete[count][6] = fruitList.get(i).getSisbenScore();
-					itemToDelete[count][7] = fruitList.get(i).getBeneficiaries();
-					itemToDelete[count][8] = fruitList.get(i).getInvestment();
-					itemToDelete[count][9] = fruitList.get(i).getHectare();
+			for (index = 0; index < fruitList.size(); index++) {
+				if (fruit.equalsIgnoreCase(fruitList.get(index).getName())
+						&& idTown == fruitList.get(index).getIdTown() 
+						&& fruitList.get(index).getGender().equalsIgnoreCase(gender)
+						&& ageGroup.equalsIgnoreCase(fruitList.get(index).getAgeGroup())
+						&& sisbenScore.equalsIgnoreCase(fruitList.get(index).getSisbenScore())
+						&& beneficiaries == fruitList.get(index).getBeneficiaries()
+						&& investment == fruitList.get(index).getInvestment() 
+						&& hectare == fruitList.get(index).getHectare()) {
+
+					itemToDelete[count][0] = fruitList.get(index).getName();
+					itemToDelete[count][1] = fruitList.get(index).getDepartment();
+					itemToDelete[count][2] = fruitList.get(index).getIdTown();
+					itemToDelete[count][3] = fruitList.get(index).getTown();
+					itemToDelete[count][4] = fruitList.get(index).getGender();
+					itemToDelete[count][5] = fruitList.get(index).getAgeGroup();
+					itemToDelete[count][6] = fruitList.get(index).getSisbenScore();
+					itemToDelete[count][7] = fruitList.get(index).getBeneficiaries();
+					itemToDelete[count][8] = fruitList.get(index).getInvestment();
+					itemToDelete[count][9] = fruitList.get(index).getHectare();
 					count++;
+					fruitDelete = index;
 				}
 			}
 			if (itemToDelete[0][0]!=null) {
 				window.setNewTable(itemToDelete);
+				window.setVisibleDelete();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -401,9 +415,6 @@ public class Controller implements ActionListener {
 
 	private void manageChangeLanguage() {
 		window.changeLanguage();
-//		graphicDialog.changeLanguage();
-//		newFileDialog.changeLanguage();
-
 	}
 
 	public void saveConfig() throws IOException {

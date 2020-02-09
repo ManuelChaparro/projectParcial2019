@@ -65,6 +65,11 @@ public class Constants {
 	public static final String FOOTER_COUNTRY = "FOOTER_COUNTRY";
 	public static final String FOOTER_CELLPHONE = "FOOTER_CELLPHONE";
 	public static final String FOOTER_ABOUT_US = "FOOTER_ABOUT_US";
+
+
+	public static final String NOTICE_DELETE_FILE = "DELETE_FILE";
+	
+	
 	
 	//Headers for table
 	public static final String H_NAME= "H_NAME";

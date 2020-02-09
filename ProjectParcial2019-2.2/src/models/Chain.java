@@ -134,5 +134,26 @@ public class Chain {
 		return allData;
 	}
 
+	public void deleteFruit(int counter) {
+		fruitsList.remove(counter);
+	}
+
+	public Object[][] getFruitListWithName(String fruitName) {
+		Object[][] fruitList = null;
+		if (fruitName.equalsIgnoreCase(Constants.BLACKBERRY)) {
+			fruitList =  getBlackberryList();
+		}else if (fruitName.equalsIgnoreCase(Constants.STRAWBERRY)) {
+			fruitList =  getStrawberryList();
+		}else if (fruitName.equalsIgnoreCase(Constants.BANANA)) {
+			fruitList =  getBananaList();
+		}else if (fruitName.equalsIgnoreCase(Constants.LULO)) {
+			fruitList =  getLuloList();
+		}else if (fruitName.equalsIgnoreCase(Constants.PEACH)) {
+			fruitList =  getPeachList();
+		}else if (fruitName.equalsIgnoreCase(Constants.PASSION_FRUIT)) {
+			fruitList =  getPassionFruitList();
+		}
+		return fruitList;
+	}
 
 }

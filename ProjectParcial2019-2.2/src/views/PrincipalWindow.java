@@ -107,4 +107,9 @@ public class PrincipalWindow extends JFrame{
 		return principalPanelObject.getInfoDelete();
 	}
 
+	public void setVisibleDelete() {
+		principalPanelObject.setVisibleDelete();
+		
+	}
+
 }
