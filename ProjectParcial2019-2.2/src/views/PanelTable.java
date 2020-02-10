@@ -41,7 +41,7 @@ public class PanelTable extends JPanel{
 		buttonsContainer = new JPanel();
 		buttonsContainer.setLayout(new FlowLayout());
 		buttonsContainer.setBackground(Color.WHITE);
-		buttonsContainer.setBorder(new EmptyBorder(0, 10, 25, 10));
+		buttonsContainer.setBorder(new EmptyBorder(0, 10, (int) (Constants.HEIGTH*0.05), 10));
 		
 		addContainer = new JPanel();
 		addContainer.setBackground(Constants.DEFAULT_COLOR.brighter());

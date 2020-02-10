@@ -1,9 +1,13 @@
 package controller;
 
 import views.*;
+
+import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 import handler.HandlerLanguage;
@@ -21,35 +25,38 @@ public class Controller implements ActionListener {
 	private Chain chain;
 	private String fruitSelected;
 	private int fruitDelete;
+	private URI uriFacebook, uriInstagram, uriYoutube;
 
 	public Controller() {
-		viewsUtilities = new ViewsUtilities();
-//		writeFile();
-		chain = new Chain();
 		config = null;
+		viewsUtilities = new ViewsUtilities();
+		chain = new Chain();
+		
+		loadPages();
+//		writeFile();
 		loadConfiguration();
-//		newFileDialog = new NewFileDialog(this);
-//		graphicDialog = new GraphicDialog(this);
-//		deleteChain = new DeleteChain(this);
 		initWindow();
 		manageChangeLanguageES();
 	}
 
+	private void loadPages() {
+		try {
+			uriFacebook = new URI(Constants.PATH_URL_FACEBOOK);
+			uriInstagram = new URI(Constants.PATH_URL_INSTAGRAM);
+			uriYoutube = new URI(Constants.PATH_URL_YOUTUBE);
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
 	private void initWindow() {
-		Object[][] blackberryData = JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_BLACKBERRY);
-		Object[][] strawberryData = JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_STRAWBERRY);
-		Object[][] luloData = JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_LULO);
-		Object[][] bananaData = JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_BANANA);
-		Object[][] passionFruitData = JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_PASSION_FRUIT);
-		Object[][] peachData = JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_PEACH);
-
-		uploadFruits(blackberryData);
-		uploadFruits(strawberryData);
-		uploadFruits(luloData);
-		uploadFruits(bananaData);
-		uploadFruits(passionFruitData);
-		uploadFruits(peachData);
-
+		uploadFruits(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_BLACKBERRY));
+		uploadFruits(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_STRAWBERRY));
+		uploadFruits(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_LULO));
+		uploadFruits(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_BANANA));
+		uploadFruits(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_PASSION_FRUIT));
+		uploadFruits(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_PEACH));
 		window = new PrincipalWindow(this);
 	}
 
@@ -175,13 +182,11 @@ public class Controller implements ActionListener {
 
 		case ACCEPT_BUTTON_DELETE:
 			chain.deleteFruit(fruitDelete);
-			Object[][] fruitList = chain.getFruitListWithName(fruitSelected);
 			window.getPanelCardLayout().removeAll();
 			window.getPanelCardLayout().add(window.getPanelTable());
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
-			window.setNewTable(fruitList);
-			System.out.println(chain.getArrayListSize());
+			window.setNewTable(chain.getFruitListWithName(fruitSelected));
 			break;
 
 		case CANCEL_BUTTON_DELETE:
@@ -189,65 +194,59 @@ public class Controller implements ActionListener {
 			window.getPanelCardLayout().add(window.getPanelTable());
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
-
+			window.setNewTable(chain.getFruitListWithName(fruitSelected));
 			break;
 
 		case SEARCH_DELETE:
-			System.out.println(chain.getArrayListSize());
 			searchDelete();
 			break;
+
 		case BLACKBERRY_BUTTON:
-			Object[][] blackberryData = chain.getBlackberryList();
 			window.getPanelCardLayout().removeAll();
 			window.getPanelCardLayout().add(window.getPanelTable());
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
-			window.setNewTable(blackberryData);
+			window.setNewTable(chain.getBlackberryList());
 			fruitSelected = Constants.BLACKBERRY;
 			break;
 		case STRAWBERRY_BUTTON:
-			Object[][] strawberryData = chain.getStrawberryList();
 			window.getPanelCardLayout().removeAll();
 			window.getPanelCardLayout().add(window.getPanelTable());
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
-			window.setNewTable(strawberryData);
+			window.setNewTable(chain.getStrawberryList());
 			fruitSelected = Constants.STRAWBERRY;
 			break;
 		case LULO_BUTTON:
-			Object[][] luloData = chain.getLuloList();
 			window.getPanelCardLayout().removeAll();
 			window.getPanelCardLayout().add(window.getPanelTable());
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
-			window.setNewTable(luloData);
+			window.setNewTable(chain.getLuloList());
 			fruitSelected = Constants.LULO;
 			break;
 		case BANANA_BUTTON:
-			Object[][] bananaData = chain.getBananaList();
 			window.getPanelCardLayout().removeAll();
 			window.getPanelCardLayout().add(window.getPanelTable());
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
-			window.setNewTable(bananaData);
+			window.setNewTable(chain.getBananaList());
 			fruitSelected = Constants.BANANA;
 			break;
 		case PASSION_FRUIT_BUTTON:
-			Object[][] passionFruitData = chain.getPassionFruitList();
 			window.getPanelCardLayout().removeAll();
 			window.getPanelCardLayout().add(window.getPanelTable());
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
-			window.setNewTable(passionFruitData);
+			window.setNewTable(chain.getPassionFruitList());
 			fruitSelected = Constants.PASSION_FRUIT;
 			break;
 		case PEACH_BUTTON:
-			Object[][] peachData = chain.getPeachList();
 			window.getPanelCardLayout().removeAll();
 			window.getPanelCardLayout().add(window.getPanelTable());
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
-			window.setNewTable(peachData);
+			window.setNewTable(chain.getPeachList());
 			fruitSelected = Constants.PEACH;
 			break;
 		case BUTTON_CHANGE_HOME:
@@ -268,6 +267,15 @@ public class Controller implements ActionListener {
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
 			break;
+		case BUTTON_FACEBOOK:
+			open(uriFacebook);
+			break;
+		case BUTTON_INSTAGRAM:
+			open(uriInstagram);
+			break;
+		case BUTTON_YOUTUBE:
+			open(uriYoutube);
+			break;
 		default:
 			break;
 		}
@@ -285,12 +293,11 @@ public class Controller implements ActionListener {
 						(String) fruit[4], ageGroup, sisbenScore, (int) fruit[9], Double.valueOf((double) fruit[10]),
 						Double.valueOf((double) fruit[11]));
 				chain.setList(newFruit);
-				Object[][] bananaData = chain.getBananaList();
 				window.getPanelCardLayout().removeAll();
 				window.getPanelCardLayout().add(window.getPanelTable());
 				window.getPanelCardLayout().repaint();
 				window.getPanelCardLayout().revalidate();
-				window.setNewTable(bananaData);
+				window.setNewTable(chain.getBananaList());
 				window.clearData();
 			}
 		} else {
@@ -313,16 +320,14 @@ public class Controller implements ActionListener {
 			int beneficiaries = Integer.parseInt((String) data[7]);
 			double investment = Double.parseDouble((String) data[8]);
 			double hectare = Double.parseDouble((String) data[9]);
-
-
+			
 			for (index = 0; index < fruitList.size(); index++) {
-				if (fruit.equalsIgnoreCase(fruitList.get(index).getName())
-						&& idTown == fruitList.get(index).getIdTown() 
+				if (fruit.equalsIgnoreCase(fruitList.get(index).getName()) && idTown == fruitList.get(index).getIdTown()
 						&& fruitList.get(index).getGender().equalsIgnoreCase(gender)
 						&& ageGroup.equalsIgnoreCase(fruitList.get(index).getAgeGroup())
 						&& sisbenScore.equalsIgnoreCase(fruitList.get(index).getSisbenScore())
 						&& beneficiaries == fruitList.get(index).getBeneficiaries()
-						&& investment == fruitList.get(index).getInvestment() 
+						&& investment == fruitList.get(index).getInvestment()
 						&& hectare == fruitList.get(index).getHectare()) {
 
 					itemToDelete[count][0] = fruitList.get(index).getName();
@@ -339,7 +344,7 @@ public class Controller implements ActionListener {
 					fruitDelete = index;
 				}
 			}
-			if (itemToDelete[0][0]!=null) {
+			if (itemToDelete[0][0] != null) {
 				window.setNewTable(itemToDelete);
 				window.setVisibleDelete();
 			}
@@ -347,29 +352,7 @@ public class Controller implements ActionListener {
 			e.printStackTrace();
 		}
 	}
-
-//	private void addNewAvocado() {
-//		try {
-//			Object[] newAvocado = newFileDialog.getDataAvocado();
-//			if ((int) newAvocado[4] < (int) newAvocado[5]) {
-//				viewsUtilities.showErrorArea();
-//				
-//			}else {
-//				avocado = new Fruit((int)newAvocado[0], (String) newAvocado[1],(int) newAvocado[2],
-//						(String) newAvocado[3], (int) newAvocado[4],(int) newAvocado[5],
-//						(int) newAvocado[6],(int) newAvocado[7], (String) newAvocado[8],
-//						(int)newAvocado[9]);
-//				Object[] data = avocado.toMatrixObject(avocado);
-//				window.setNewAvocadoInTable(data);
-//				newFileDialog.clearData();
-//			}
-//		} catch (NumberFormatException e) {
-//			viewsUtilities.showErrorString();
-//		}
-//		
-//		
-//	}
-
+	
 	private void loadConfiguration() {
 		if (config == null) {
 			config = new HandlerLanguage(Constants.NAME_FILE_CONFIG);
@@ -428,6 +411,16 @@ public class Controller implements ActionListener {
 		try {
 			config.loadLanguage();
 		} catch (Exception e) {
+		}
+	}
+	
+	private void open(URI uri) {
+		if (Desktop.isDesktopSupported()) {
+			try {
+				Desktop.getDesktop().browse(uri);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
 		}
 	}
 

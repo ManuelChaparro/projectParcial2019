@@ -8,7 +8,6 @@ import java.awt.GridLayout;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
@@ -26,13 +25,13 @@ public class DeleteChain extends JPanel {
 	private PanelTable table;
 	private Gender gender;
 	private Fruits fruit;
-	private PanelObject containerAgeGroup, containerSisbenScore, containerNotice, containerButtons;
+	private PanelObject containerAgeGroup, containerSisbenScore, containerNotice;
 	private JSpinner ageOne, ageTwo, sisbenOne, sisbenTwo;
 	private SpinnerNumberModel ageOneModel, ageTwoModel, sisbenOneModel, sisbenTwoModel;
 	private JPanel containerFields, north, center, south, titlePanel;
 	private LabelObject notice, toAge, toSisben, title, titleFruit, titleIdTown, titleGender, titleAgeGroup,
 			titleSisbenScore, titleBeneficiaries, titleInvestment, titleHectare;
-	private TextFieldObject  idTown, ageGroup, sisbenScore, beneficiaries, investment, hectare;
+	private TextFieldObject  idTown, beneficiaries, investment, hectare;
 	private ButtonObject search, accept, cancel;
 
 

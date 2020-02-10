@@ -1,15 +1,10 @@
 package views;
 
 import java.awt.BorderLayout;
-import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Toolkit;
-import java.util.ArrayList;
-
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
@@ -44,7 +39,7 @@ public class PrincipalPanel extends JPanel{
 		scroll = new JScrollPane(cardLayout);
 		add(scroll, BorderLayout.CENTER);
 		
-		footer = new PanelFooter();
+		footer = new PanelFooter(controller);
 		add(footer, BorderLayout.SOUTH);
 		
 		setVisible(true);

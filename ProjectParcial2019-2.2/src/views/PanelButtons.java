@@ -4,15 +4,9 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Image;
-import java.awt.Insets;
 import java.awt.LayoutManager;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-import java.nio.ByteOrder;
-
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;

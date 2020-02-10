@@ -4,20 +4,18 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Toolkit;
-import java.io.ObjectInputStream.GetField;
-
 public class Constants {
 	
 	private static Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 	
 	//Constants for text
 	
-	public static final String WRITING_BLACKBERRY = "Writing data blackberry";
-	public static final String WRITING_STRAWBERRY = "Writing data strawberry";
-	public static final String WRITING_LULO = "Writing data lulo";
-	public static final String WRITING_BANANA = "Writing data banana";
-	public static final String WRITING_PASSION_FRUIT = "Writing data passion fruit";
-	public static final String WRITING_PEACH = "Writing data peach";
+	public static final String WRITING_BLACKBERRY = "Downloading data blackberry";
+	public static final String WRITING_STRAWBERRY = "Downloading data strawberry";
+	public static final String WRITING_LULO = "Downloading data lulo";
+	public static final String WRITING_BANANA = "Downloading data banana";
+	public static final String WRITING_PASSION_FRUIT = "Downloading data passion fruit";
+	public static final String WRITING_PEACH = "Downloading data peach";
 	
 	public static final String TITLE_WINDOW = "FRUIT_REGISTER";
 	public static final String TITLE_DIALOG_NEW = "NEW_FILE";
@@ -62,9 +60,10 @@ public class Constants {
 	public static final String STATE_FRUIT_BAD = "BAD_FRUIT";
 	
 	
+	public static final String FOOTER_TITLE = "FOOTER_TITLE";
 	public static final String FOOTER_COUNTRY = "FOOTER_COUNTRY";
 	public static final String FOOTER_CELLPHONE = "FOOTER_CELLPHONE";
-	public static final String FOOTER_ABOUT_US = "FOOTER_ABOUT_US";
+	public static final String FOOTER_ABOUT_US = "FOOTER_ABOUT";
 
 
 	public static final String NOTICE_DELETE_FILE = "DELETE_FILE";
@@ -94,11 +93,15 @@ public class Constants {
 	
 	//Constants for paths
 	public static final String PATH_IMAGE_BANNER = "/resource/banner.png";
+	public static final String PATH_IMAGE_HOME_ENGLISH = "/resource/homeImageEnglish.jpg";
 	public static final String PATH_IMAGE_HOME = "/resource/homeImage.jpg";
 	public static final String PATH_ICON_FRAME = "/resource/iconFrame.png";
 	public static final String PATH_ICON_ACCEPT = "/resource/iconAccept.png";
 	public static final String PATH_ICON_CANCEL = "/resource/iconCancel.png";
 	public static final String PATH_ICON_SEARCH = "/resource/iconSearch.png";
+	public static final String PATH_ICON_FACEBOOK = "/resource/iconFacebook.png";
+	public static final String PATH_ICON_INSTAGRAM = "/resource/iconInstagram.png";
+	public static final String PATH_ICON_YOUTUBE = "/resource/iconYoutube.png";
 	public static final String PATH_LOCAL_FILE_BLACKBERRY = "resource/blackberry.INFO";
 	public static final String PATH_LOCAL_FILE_STRAWBERRY = "resource/strawberry.INFO";
 	public static final String PATH_LOCAL_FILE_LULO = "resource/lulo.INFO";
@@ -120,12 +123,16 @@ public class Constants {
 	public static final String PATH_URL_FILE_PEACH = "https://www.datos.gov.co/api/views/7xnk-585m/rows.json?accessType=DOWNLOAD";
 	public static final String NAME_FILE_CONFIG = "config.init";
 	
+	public static final String PATH_URL_FACEBOOK = "https://www.facebook.com/universidaduptc/";
+	public static final String PATH_URL_INSTAGRAM = "https://instagram.com/universidaduptc?igshid=1w9zbmpafshgc";
+	public static final String PATH_URL_YOUTUBE = "https://www.youtube.com/user/EdumediosUptc/featured";
+	
 	public static final String PATH_HAN_LEN_SPANISH = "language/language_spanish.properties";
 	public static final String PATH_HAN_LEN_ENGLISH = "language/language_english.properties";
 	
 	//Constants for numbers
-	public static final int M_WIDTH_SIZE = (int) (dimension.getWidth()*0.93);
-	public static final int M_HEIGHT_SIZE = (int) (dimension.getHeight()*0.7);
+	public static final int M_WIDTH_SIZE = (int) (dimension.getWidth()*0.7);
+	public static final int M_HEIGHT_SIZE = (int) (dimension.getHeight()*0.5);
 	public static final int WIDTH = (int) (dimension.getWidth());
 	public static final int HEIGTH = (int) (dimension.getHeight());
 	

@@ -2,11 +2,7 @@ package views;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.RenderingHints;
-
 import javax.swing.BoxLayout;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -23,7 +19,7 @@ public class PanelHome extends JPanel{
 	private Image home;
 
 	public PanelHome(String pathImageHome) {
-		setPreferredSize(new Dimension(1000, 1000));
+		setPreferredSize(new Dimension(50, 1000));
 		setBackground(Color.WHITE);
 		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 		initComponents(pathImageHome);		

@@ -4,8 +4,6 @@ import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.event.ActionListener;
-
 import javax.swing.JPanel;
 
 import controller.Controller;
@@ -16,7 +14,7 @@ public class PanelCardLayout extends JPanel{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private PanelHome home;
+	private PanelHome homeSpanish;
 	private PanelExport export;
 	private PanelGraphics graphics;
 	private PanelTable table;
@@ -26,22 +24,22 @@ public class PanelCardLayout extends JPanel{
 	public PanelCardLayout(Controller controller) {
 		setLayout(new CardLayout());
 		setBackground(Color.WHITE);
-		setPreferredSize(new Dimension(Constants.WIDTH, (int) (Constants.HEIGTH)));
+		setPreferredSize(new Dimension((int) (Constants.WIDTH*0.8), (int) (Constants.HEIGTH)));
 		initComponents(controller);
 	}
 
 	private void initComponents(Controller controller) {
-		home = new PanelHome(Constants.PATH_IMAGE_HOME);
-		add(home, "Panel one");
+		homeSpanish = new PanelHome(Constants.PATH_IMAGE_HOME);
+		add(homeSpanish, "Panel one");
 		
 		export = new PanelExport();
-		add(home, "Panel two");
+		add(homeSpanish, "Panel two");
 		
 		graphics = new PanelGraphics();
-		add(home, "Panel three");
+		add(homeSpanish, "Panel three");
 		
 		table = new PanelTable(controller);
-		add(home, "Panel four");
+		add(homeSpanish, "Panel four");
 		
 		newFile = new NewFileDialog(controller);
 		add(newFile, "Panel five");
@@ -51,7 +49,7 @@ public class PanelCardLayout extends JPanel{
 	}
 
 	public Component getPanelHome() {
-		return this.home;
+		return this.homeSpanish;
 	}
 	
 	public Component getPanelExport() {
@@ -69,6 +67,8 @@ public class PanelCardLayout extends JPanel{
 	public Component getNewFile() {
 		return this.newFile;
 	}
+	
+	
 
 	public void setNewTable(Object[][] strawberryData) {
 		table.setNewTable(strawberryData);
@@ -82,7 +82,7 @@ public class PanelCardLayout extends JPanel{
 	}
 
 	public void setNewHome(String pathImageBanana) {
-		home = new PanelHome(Constants.PATH_IMAGE_BANANA);
+		homeSpanish = new PanelHome(Constants.PATH_IMAGE_BANANA);
 	}
 
 	public Object[] getDataFruit() {
@@ -111,7 +111,7 @@ public class PanelCardLayout extends JPanel{
 		deleteFile.setVisibleDelete();
 		
 	}
-	
+
 	
 	
 	

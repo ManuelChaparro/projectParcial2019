@@ -35,6 +35,21 @@ public class ButtonObject extends JButton{
 		addActionListener(actionListener);
 		setFont(font);
 	}
+	public ButtonObject(String text, Color background, Icon rescaled, ActionListener actionListener, String Command, Font font, String url) {
+		setText(text);
+		setBackground(background);
+		setIcon(rescaled);
+		setOpaque(false);
+		setBorder(null);
+		setContentAreaFilled(false);
+		setHorizontalTextPosition( SwingConstants.CENTER );
+		setVerticalTextPosition( SwingConstants.BOTTOM );
+		setCursor(new Cursor(12));
+		setActionCommand(Command);
+		addActionListener(actionListener);
+		setFont(font);
+		setToolTipText(url);
+	}
 	
 	public ButtonObject(String text, Color background, ActionListener actionListener, String Command, Font font) {
 		setText(text);

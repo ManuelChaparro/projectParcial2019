@@ -4,16 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Image;
-
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JDialog;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-
-import controller.Commands;
 import controller.Controller;
 import handler.HandlerLanguage;
 

@@ -56,7 +56,6 @@ public class Utilities {
 		@SuppressWarnings("resource")
 		FileOutputStream out = new FileOutputStream(pathLocalFile);
 		int c;
-		int totalData = in.available();
 		while ((c = in.read()) != -1) {
 			out.write(c);	
 		}

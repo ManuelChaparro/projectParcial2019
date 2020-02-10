@@ -1,14 +1,10 @@
 package views;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.Image;
-import java.awt.LayoutManager;
-
-import javax.swing.BoxLayout;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
@@ -29,7 +25,6 @@ public class NewFileContainer extends JPanel {
 	private Departments departaments;
 	private Fruits fruits;
 	private Gender gender;
-	private PhysicalState physicalState;
 	private JSpinner ageOne, ageTwo, sisbenOne, sisbenTwo;
 	private SpinnerNumberModel ageOneModel, ageTwoModel, sisbenOneModel, sisbenTwoModel;
 	private LabelObject toAge, toSisben, LName, LDepartaments, LIdTown, LTown, LAgeGroup, LSisbenScore, LGender, LBeneficiaries,
@@ -37,7 +32,6 @@ public class NewFileContainer extends JPanel {
 	private TextFieldObject town, idTown, beneficiaries, investment, hectare;
 	private PanelObject containerAgeGroup, containerSisbenScore;
 	private ButtonObject accept, cancel;
-	private PanelObject containerButtons;
 
 	public NewFileContainer(Controller controller) {
 		setPreferredSize(new Dimension(1000, 450));
@@ -203,6 +197,7 @@ public class NewFileContainer extends JPanel {
 		LAgeGroup.setText(HandlerLanguage.languageProperties.getProperty(Constants.AGE_GROUP));
 		LSisbenScore.setText(HandlerLanguage.languageProperties.getProperty(Constants.SISBEN_SCORE));
 		toAge.setText(HandlerLanguage.languageProperties.getProperty(Constants.TO));
+		toSisben.setText(HandlerLanguage.languageProperties.getProperty(Constants.TO));
 		LBeneficiaries.setText(HandlerLanguage.languageProperties.getProperty(Constants.BENEFICIARIES));
 		LInvestment.setText(HandlerLanguage.languageProperties.getProperty(Constants.INVESTMENT));
 		LHectare.setText(HandlerLanguage.languageProperties.getProperty(Constants.HECTARE));
