@@ -27,6 +27,19 @@ public class Fruit {
 		this.hectare = hectare;
 	}
 	
+	public Fruit(String name, String department, String town, int idTown, String gender, String ageGroup, int beneficiaries,
+			double investment, double hectare) {
+		this.name = name;
+		this.department = department;
+		this.town = town;
+		this.idTown = idTown;
+		this.gender = gender;
+		this.ageGroup = ageGroup;
+		this.beneficiaries = beneficiaries;
+		this.investment = investment;
+		this.hectare = hectare;
+	}
+	
 	public String getSisbenScore() {
 		return sisbenScore;
 	}

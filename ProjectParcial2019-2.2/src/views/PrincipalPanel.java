@@ -116,5 +116,31 @@ public class PrincipalPanel extends JPanel{
 	public void setVisibleDelete() {
 		cardLayout.setVisibleDelete();
 	}
+
+	public void setVisibleButtonsExport(boolean option) {
+		cardLayout.setVisibleButtonsExport(option);
+		
+	}
+
+	public void changeReport(Object[][] newData, int option, boolean visible) {
+		cardLayout.changeReport(newData, option, visible);
+		
+	}
+
+	public void createGraphic(String[][] matrix, boolean visible) {
+		cardLayout.createGraphic(matrix, visible);
+//		cardLayout.remove(comp);
+		
+	}
+
+	public String getDepartment(boolean option) {
+		return cardLayout.getDepartment(option);
+	}
+
+	public void createGraphicBar(String[][] matrix, boolean visible) {
+		cardLayout.createGraphicBar(matrix, visible);
+		
+	}
+
 	
 }

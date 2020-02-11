@@ -32,14 +32,14 @@ public class PanelCardLayout extends JPanel{
 		homeSpanish = new PanelHome(Constants.PATH_IMAGE_HOME);
 		add(homeSpanish, "Panel one");
 		
-		export = new PanelExport();
-		add(homeSpanish, "Panel two");
+		export = new PanelExport(controller);
+		add(export, "Panel two");
 		
-		graphics = new PanelGraphics();
-		add(homeSpanish, "Panel three");
+		graphics = new PanelGraphics(controller);
+		add(graphics, "Panel three");
 		
 		table = new PanelTable(controller);
-		add(homeSpanish, "Panel four");
+		add(table, "Panel four");
 		
 		newFile = new NewFileDialog(controller);
 		add(newFile, "Panel five");
@@ -79,6 +79,8 @@ public class PanelCardLayout extends JPanel{
 		table.changeLenguage();	
 		newFile.changeLanguage();
 		deleteFile.changeLanguage();
+		export.changeLanguage();
+		graphics.changeLanguage();
 	}
 
 	public void setNewHome(String pathImageBanana) {
@@ -111,6 +113,40 @@ public class PanelCardLayout extends JPanel{
 		deleteFile.setVisibleDelete();
 		
 	}
+
+	public void setVisibleButtonsExport(boolean option) {
+		export.setVisibleButtonsExport(option);
+	}
+
+
+	public void changeReport(Object[][] newData, int  option, boolean visible) {
+		export.changeReport(newData, option, visible);
+	}
+
+	public void createGraphic(String[][] matrix, boolean visible) {
+		graphics.createGraphic(matrix, visible);
+		graphics.repaint();
+	}
+
+	public String getDepartment(boolean option) {
+		if (option) {
+			return export.getDepartment();
+		}else {
+			return graphics.getDepartment();
+		}
+
+		
+	}
+	
+	public void deletePanel() {
+
+	}
+
+	public void createGraphicBar(String[][] matrix, boolean visible) {
+		graphics.createGraphicBar(matrix, visible);
+		graphics.repaint();
+	}
+
 
 	
 	

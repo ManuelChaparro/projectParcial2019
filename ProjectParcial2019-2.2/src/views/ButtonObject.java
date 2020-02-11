@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import javax.swing.Icon;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
+import javax.swing.border.EmptyBorder;
 
 public class ButtonObject extends JButton{
 
@@ -34,6 +35,8 @@ public class ButtonObject extends JButton{
 		setActionCommand(Command);
 		addActionListener(actionListener);
 		setFont(font);
+		setForeground(Color.BLACK);
+		setBorder(new EmptyBorder(10, 50, 10, 50));
 	}
 	public ButtonObject(String text, Color background, Icon rescaled, ActionListener actionListener, String Command, Font font, String url) {
 		setText(text);

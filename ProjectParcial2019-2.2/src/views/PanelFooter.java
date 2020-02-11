@@ -2,14 +2,9 @@ package views;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.net.URI;
-
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
@@ -71,13 +66,13 @@ public class PanelFooter extends JPanel{
 			Icon rescaledInstagram = new ImageIcon(imageInstagram.getScaledInstance((int) (Constants.WIDTH * 0.03),
 					(int) (Constants.WIDTH * 0.03), Image.SCALE_SMOOTH));
 			instagram = new ButtonObject("", Color.BLACK, rescaledInstagram, controller,
-					Commands.BUTTON_INSTAGRAM.name(), Constants.DEFAULT_FONT, Constants.PATH_URL_INSTAGRAM);
+					Commands.BUTTON_INSTAGRAM.name(), Constants.DEFAULT_FONT);
 			
 			Image imageYoutube = new ImageIcon(getClass().getResource(Constants.PATH_ICON_YOUTUBE)).getImage();
 			Icon rescaledYoutube = new ImageIcon(imageYoutube.getScaledInstance((int) (Constants.WIDTH * 0.03),
 					(int) (Constants.WIDTH * 0.03), Image.SCALE_SMOOTH));
 			youtube = new ButtonObject("", Color.BLACK, rescaledYoutube, controller,
-					Commands.BUTTON_YOUTUBE.name(), Constants.DEFAULT_FONT, Constants.PATH_URL_YOUTUBE);
+					Commands.BUTTON_YOUTUBE.name(), Constants.DEFAULT_FONT);
 			
 			//Add info to Containers
 			containerButtons.add(facebook);

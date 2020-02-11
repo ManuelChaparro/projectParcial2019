@@ -10,7 +10,7 @@
       "createdAt" : 1539204827,
       "description" : "Datos agregados de los beneficiarios de asistencia técnica durante la vigencia 2017, resultante de los convenios suscritos por la Agencia de Desarrollo Rural (ADR) para la prestación de éste servicio público, en el marco de la Ley 607 de 2000.\nSe indica el número de beneficiarios, la inversión y hectáreas estimadas, discriminado por departamento, municipio, grupo etareo, condición de víctima, discapacidad, orientación sexual, puntaje de SISBEN, y pertenencia étnica.",
       "displayType" : "table",
-      "downloadCount" : 47,
+      "downloadCount" : 55,
       "hideFromCatalog" : false,
       "hideFromDataJson" : false,
       "indexUpdatedAt" : 1539205244,
@@ -26,7 +26,7 @@
       "rowsUpdatedBy" : "7qnn-9hh6",
       "tableId" : 15579177,
       "totalTimesRated" : 0,
-      "viewCount" : 125,
+      "viewCount" : 126,
       "viewLastModified" : 1539205154,
       "viewType" : "tabular",
       "approvals" : [ {

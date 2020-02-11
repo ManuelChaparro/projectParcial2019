@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 import handler.HandlerLanguage;
 import models.Fruit;
+import models.ReportManager;
 import models.Chain;
 import persistence.JsonFileManager;
 import utilities.Utilities;
@@ -20,11 +21,11 @@ public class Controller implements ActionListener {
 
 	private HandlerLanguage config;
 	private PrincipalWindow window;
-	private GraphicDialog graphicDialog;
 	private ViewsUtilities viewsUtilities;
 	private Chain chain;
 	private String fruitSelected;
 	private int fruitDelete;
+	private ReportManager reportManager;
 	private URI uriFacebook, uriInstagram, uriYoutube;
 
 	public Controller() {
@@ -33,10 +34,11 @@ public class Controller implements ActionListener {
 		chain = new Chain();
 		
 		loadPages();
-//		writeFile();
+		writeFile();
 		loadConfiguration();
 		initWindow();
 		manageChangeLanguageES();
+
 	}
 
 	private void loadPages() {
@@ -58,6 +60,7 @@ public class Controller implements ActionListener {
 		uploadFruits(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_PASSION_FRUIT));
 		uploadFruits(JsonFileManager.readFile(Constants.PATH_LOCAL_FILE_PEACH));
 		window = new PrincipalWindow(this);
+		reportManager = new ReportManager(chain.getFruitsList());
 	}
 
 	private void uploadFruits(Object[][] fruits) {
@@ -149,10 +152,6 @@ public class Controller implements ActionListener {
 			window.getPanelCardLayout().repaint();
 			window.getPanelCardLayout().revalidate();
 			break;
-		case SHOW_GRAPHIC:
-			graphicDialog.setVisible(true);
-			break;
-
 		case C_ES_LANGUAGE:
 			manageChangeLanguageES();
 			break;
@@ -276,6 +275,76 @@ public class Controller implements ActionListener {
 		case BUTTON_YOUTUBE:
 			open(uriYoutube);
 			break;
+		case REPORT_ONE:
+			window.setVisibleButtonsExport(true);
+			window.changeReport(reportManager.generateReportOfHectaresPerDepartament(window.getDepartment(true)), 1, true);
+			break;
+		case REPORT_TWO:
+			window.setVisibleButtonsExport(false);
+			window.changeReport(reportManager.generateReportOfBeneficiariesPerDepartament(window.getDepartment(true)), 2, true);
+			break;
+		case REPORT_THREE:
+			window.setVisibleButtonsExport(false);
+			window.changeReport(reportManager.generateReportOfInvestmentPerDepartament(window.getDepartment(true)), 3, true);
+			break;
+		case REPORT_FOUR:
+			window.setVisibleButtonsExport(false);
+			window.changeReport(reportManager.generateReportOfAetaricPerDepartament(window.getDepartment(true)), 4, true);
+			break;
+		case REPORT_FIVE:
+			window.setVisibleButtonsExport(false);
+			window.changeReport(reportManager.generateReportOfGenderPerDepartament(window.getDepartment(true)), 4, true);
+			break;
+		case REPORT_SIX:
+			window.setVisibleButtonsExport(false);
+			window.changeReport(reportManager.generateReportOfNationalHectares(), 5, false);
+			break;
+		case REPORT_SEVEN:
+			window.setVisibleButtonsExport(false);
+			window.changeReport(reportManager.generateReportOfNationalBeneficiaries(), 6, false);
+			break;
+		case REPORT_EIGHT:
+			window.setVisibleButtonsExport(false);
+			window.changeReport(reportManager.generateReportOfNationalInvestment(), 7, false);
+			break;
+		case REPORT_NINE:
+			window.setVisibleButtonsExport(false);
+			window.changeReport(reportManager.generateReportOfNationalAetaric(), 8, false);
+			break;
+		case REPORT_TEN:
+			window.setVisibleButtonsExport(false);
+			window.changeReport(reportManager.generateReportOfNationalGender(), 8, false);
+			break;
+		case GRAPHIC_ONE:
+			window.createGraphic(reportManager.generateReportOfHectaresPerDepartament(window.getDepartment(false)), true);
+			break;
+		case GRAPHIC_TWO:
+			window.createGraphic(reportManager.generateReportOfBeneficiariesPerDepartament(window.getDepartment(false)), true);
+			break;
+		case GRAPHIC_THREE:
+			window.createGraphic(reportManager.generateReportOfInvestmentPerDepartament(window.getDepartment(false)), true);
+			break;
+		case GRAPHIC_FOUR:
+			window.createGraphicBar(reportManager.generateReportOfAetaricPerDepartament(window.getDepartment(false)), true);
+			break;
+		case GRAPHIC_FIVE:
+			window.createGraphicBar(reportManager.generateReportOfGenderPerDepartament(window.getDepartment(false)), true);
+			break;
+		case GRAPHIC_SIX:
+			window.createGraphic(reportManager.generateReportOfNationalHectares(), false);
+			break;
+		case GRAPHIC_SEVEN:
+			window.createGraphic(reportManager.generateReportOfNationalBeneficiaries(), false);
+			break;
+		case GRAPHIC_EIGHT:
+			window.createGraphic(reportManager.generateReportOfNationalInvestment(), false);
+			break;
+		case GRAPHIC_NINE:
+			window.createGraphicBar(reportManager.generateReportOfNationalAetaric(), false);
+			break;
+		case GRAPHIC_TEN:
+			window.createGraphicBar(reportManager.generateReportOfNationalGender(), false);
+			break;
 		default:
 			break;
 		}
@@ -292,7 +361,7 @@ public class Controller implements ActionListener {
 				Fruit newFruit = new Fruit(name, (String) fruit[1], (String) fruit[2], (int) fruit[3],
 						(String) fruit[4], ageGroup, sisbenScore, (int) fruit[9], Double.valueOf((double) fruit[10]),
 						Double.valueOf((double) fruit[11]));
-				chain.setList(newFruit);
+				reportManager.setFruit(newFruit);
 				window.getPanelCardLayout().removeAll();
 				window.getPanelCardLayout().add(window.getPanelTable());
 				window.getPanelCardLayout().repaint();

@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Toolkit;
+
+import handler.HandlerLanguage;
 public class Constants {
 	
 	private static Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
@@ -73,6 +75,7 @@ public class Constants {
 	//Headers for table
 	public static final String H_NAME= "H_NAME";
 	public static final String H_DEPARTMENT= "H_DEPARTMENT";
+	public static final String H_NATIONAL= "H_NATIONAL";
 	public static final String H_TOWN= "H_TOWN";
 	public static final String H_ID_TOWN= "H_ID_TOWN";
 	public static final String H_GENDER= "H_GENDER";
@@ -102,6 +105,10 @@ public class Constants {
 	public static final String PATH_ICON_FACEBOOK = "/resource/iconFacebook.png";
 	public static final String PATH_ICON_INSTAGRAM = "/resource/iconInstagram.png";
 	public static final String PATH_ICON_YOUTUBE = "/resource/iconYoutube.png";
+	public static final String PATH_ICON_JSON = "/resource/iconJson.png";
+	public static final String PATH_ICON_XML = "/resource/iconXml.png";
+	public static final String PATH_ICON_BINARY = "/resource/iconBinary.png";
+	public static final String PATH_ICON_TEXT = "/resource/iconText.png";
 	public static final String PATH_LOCAL_FILE_BLACKBERRY = "resource/blackberry.INFO";
 	public static final String PATH_LOCAL_FILE_STRAWBERRY = "resource/strawberry.INFO";
 	public static final String PATH_LOCAL_FILE_LULO = "resource/lulo.INFO";
@@ -138,6 +145,22 @@ public class Constants {
 	
 	public static final double PERCENTAGE_WIDTH = 0.8;
 	
+	//Constants for reports
+	public static final String BUTTON_JSON = "EXPORT_JSON";
+	public static final String BUTTON_XML = "EXPORT_XML";
+	public static final String BUTTON_BINARY = "EXPORT_BINARY";
+	public static final String BUTTON_TEXT = "EXPORT_TEXT";
+	public static final String BUTTON_REPORT_ONE = "REPORT_ONE";
+	public static final String BUTTON_REPORT_TWO = "REPORT_TWO";
+	public static final String BUTTON_REPORT_THREE = "REPORT_THREE";
+	public static final String BUTTON_REPORT_FOUR = "REPORT_FOUR";
+	public static final String BUTTON_REPORT_FIVE = "REPORT_FIVE";
+	public static final String BUTTON_REPORT_SIX = "REPORT_SIX";
+	public static final String BUTTON_REPORT_SEVEN = "REPORT_SEVEN";
+	public static final String BUTTON_REPORT_EIGHT = "REPORT_EIGHT";
+	public static final String BUTTON_REPORT_NINE = "REPORT_NINE";
+	public static final String BUTTON_REPORT_TEN = "REPORT_TEN";
+	
 	
 	//Constants for Fonts
 	private static final int DEFAULT_FONT_SIZE = (int) (dimension.getHeight()*0.021);
@@ -148,9 +171,10 @@ public class Constants {
 	public static final Font DEFAULT_FONT_MIN = new Font("Segoe UI", Font.BOLD, DEFAULT_FONT_MIN_SIZE);
 
 	//Constants for Colors
-	public static final Color DEFAULT_COLOR = Color.decode("#008000");
-	public static final Color AQUA_COLOR = Color.decode("#009D71");
-	public static final Color RED_COLOR = Color.decode("#CB1D11");
+	public static final Color DEFAULT_COLOR = Color.decode("#009900");
+	public static final Color AQUA_COLOR = Color.decode("#5D6D7E");
+	public static final Color RED_COLOR = Color.decode("#CC0000");
+	public static final Color ORANGE_COLOR = Color.decode("#BA4A00");
 	
 	//Constants for Fruits
 	public static final String STRAWBERRY = "FRESA";
@@ -164,40 +188,44 @@ public class Constants {
 	public static final String WOMAN = "MUJER";
 	public static final String MALE = "HOMBRE";
 	
+	//Constants for Headers
+	public static final String[] HEADERS_TOWN_HECTARE = { HandlerLanguage.languageProperties.getProperty(Constants.H_TOWN),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_HECTARE)};
+	public static final String[] HEADERS_TOWN_BENEFICIARIES = { HandlerLanguage.languageProperties.getProperty(Constants.H_TOWN),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_BENEFICIARIES)};
+	public static final String[] HEADERS_TOWN_INVESTMENT = { HandlerLanguage.languageProperties.getProperty(Constants.H_TOWN),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_INVESTMENT)};
+	public static final String[] HEADERS_TOWN_AGE = { HandlerLanguage.languageProperties.getProperty(Constants.H_TOWN),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_AGE_GROUP)};
+	public static final String[] HEADERS_DEPARTMENT_HECTARE = { HandlerLanguage.languageProperties.getProperty(Constants.H_DEPARTMENT),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_HECTARE)};
+	public static final String[] HEADERS_DEPARTMENT_BENEFICIARIES = { HandlerLanguage.languageProperties.getProperty(Constants.H_DEPARTMENT),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_BENEFICIARIES)};
+	public static final String[] HEADERS_DEPARTMENT_INVESTMENT = { HandlerLanguage.languageProperties.getProperty(Constants.H_DEPARTMENT),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_INVESTMENT)};
+	public static final String[] HEADERS_DEPARTMENT_AGE = { HandlerLanguage.languageProperties.getProperty(Constants.H_DEPARTMENT),
+			HandlerLanguage.languageProperties.getProperty(Constants.AGE_GROUP)};
+	public static final String[] HEADERS_DEPARTMENT_GENDER = { HandlerLanguage.languageProperties.getProperty(Constants.H_DEPARTMENT),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_GENDER)};
+	public static final String[] HEADERS_EVERYTHING = { HandlerLanguage.languageProperties.getProperty(Constants.NAME),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_DEPARTMENT),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_HECTARE),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_INVESTMENT),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_BENEFICIARIES),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_AGE_GROUP),
+			HandlerLanguage.languageProperties.getProperty(Constants.H_SISBEN_SCORE)};
+	
 	//Constants for Departments
-	public static final String AMAZONAS = "AMAZONAS";
 	public static final String ANTIOQUIA = "ANTIOQUIA";
-	public static final String ARAUCA = "ARAUCA";
-	public static final String ATLANTICO = "ATLANTICO";
-	public static final String BOGOTA_DC = "BOGOTA DC";
-	public static final String BOLIVAR = "BOLIVAR";
-	public static final String BOYACA = "BOYACA";
+	public static final String BOLIVAR = "BOLÍVAR";
+	public static final String BOYACA = "BOYACÁ";
 	public static final String CALDAS = "CALDAS";
-	public static final String CAQUETA = "CAQUETA";
-	public static final String CASANARE = "CASANARE";
 	public static final String CAUCA = "CAUCA";
-	public static final String CESAR = "CESAR";
-	public static final String CHOCO = "CHOCO";
-	public static final String CORDOBA = "CORDOBA";
 	public static final String CUNDINAMARCA = "CUNDINAMARCA";
-	public static final String GUAINIA = "GUAINIA";
-	public static final String GUAVIARE = "GUAVIARE";
+	public static final String CORDOBA = "CÓRDOBA";
 	public static final String HUILA = "HUILA";
-	public static final String LA_GUAJIRA = "LA GUAJIRA";
-	public static final String MAGDALENA = "MAGDALENA";
-	public static final String META = "META";
-	public static final String NARINO = "NARI�O";
-	public static final String NORTE_DE_SANTANDER = "NORTE DE SANTANDER";
 	public static final String PUTUMAYO = "PUTUMAYO";
-	public static final String QUNIDIO = "QUNIDIO";
-	public static final String RISARALDA = "RISARALDA";
-	public static final String SAN_ANDRES = "SAN ANDRES";
-	public static final String SANTANDER = "SANTANDER";
-	public static final String SUCRE = "SUCRE";
 	public static final String TOLIMA = "TOLIMA";
-	public static final String VALLE_DEL_CAUCA = "VALLE DEL CAUCA";
-	public static final String VAUPES = "VAUPES";
-	public static final String VICHADA = "VICHADA";
 	
 	public static final String ID_AMAZONAS = "91";
 	public static final String ID_ANTIOQUIA = "05";
@@ -232,5 +260,7 @@ public class Constants {
 	public static final String ID_VALLE_DEL_CAUCA = "76";
 	public static final String ID_VAUPES = "97";
 	public static final String ID_VICHADA = "99";
+
+
 
 }

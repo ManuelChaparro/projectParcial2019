@@ -219,6 +219,7 @@ public class DeleteChain extends JPanel {
 				(int) (Constants.WIDTH * 0.03), Image.SCALE_SMOOTH));
 		search = new ButtonObject("", Color.WHITE, rescaledSearch, controller, Commands.SEARCH_DELETE.name(),
 				Constants.DEFAULT_FONT);
+		search.setBorder(null);
 		
 		Image imageAccept = new ImageIcon(getClass().getResource(Constants.PATH_ICON_ACCEPT)).getImage();
 		Icon rescaledAccept = new ImageIcon(imageAccept.getScaledInstance((int) (Constants.WIDTH * 0.03),
@@ -276,7 +277,10 @@ public class DeleteChain extends JPanel {
 		titleInvestment.setText(HandlerLanguage.languageProperties.getProperty(Constants.INVESTMENT));
 		titleHectare.setText(HandlerLanguage.languageProperties.getProperty(Constants.HECTARE));
 		notice.setText(HandlerLanguage.languageProperties.getProperty(Constants.NOTICE_DELETE_FILE));
+		toAge.setText(HandlerLanguage.languageProperties.getProperty(Constants.TO));
+		toSisben.setText(HandlerLanguage.languageProperties.getProperty(Constants.TO));
 		table.changeLenguage();
+
 	}
 
 	public void setNewTable(Object[][] newFruitData) {

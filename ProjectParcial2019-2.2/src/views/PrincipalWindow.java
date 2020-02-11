@@ -112,4 +112,29 @@ public class PrincipalWindow extends JFrame{
 		
 	}
 
+	public void setVisibleButtonsExport(boolean option) {
+		principalPanelObject.setVisibleButtonsExport(option);
+		
+	}
+
+	public void changeReport(Object[][] newData, int option, boolean visible) {
+		principalPanelObject.changeReport(newData, option, visible);
+		
+	}
+
+	public void createGraphic(String[][] matrix, boolean visible) {
+		principalPanelObject.createGraphic(matrix, visible);
+		
+	}
+
+	public String getDepartment(boolean option) {
+		return principalPanelObject.getDepartment(option);
+	}
+
+	public void createGraphicBar(String[][] matrix, boolean visible) {
+		principalPanelObject.createGraphicBar(matrix, visible);
+		
+	}
+
+
 }
