@@ -43,16 +43,6 @@ public class PanelObject extends JPanel{
 		add(panel, BorderLayout.CENTER);
 	}
 	
-	public PanelObject(Color background, LabelObject label, PhysicalState panel) {
-		setLayout(new BorderLayout(0, 5));
-		setBackground(background);
-		setBorder(new EmptyBorder(10, 10, 0, 10));
-		setPreferredSize(new Dimension(300, 50));
-		
-		add(label, BorderLayout.NORTH);
-		add(panel, BorderLayout.CENTER);
-	}
-	
 	public PanelObject(Color background, PanelObject center, PanelObject west) {
 		setLayout(new BorderLayout());
 		setPreferredSize(new Dimension(500, 20));

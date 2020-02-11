@@ -27,7 +27,7 @@ public class PanelExport extends JPanel{
 	private static final long serialVersionUID = 1L;
 	private PanelObject north, center, south, containerButtons;
 	private Departments departments;
-	private ButtonObject json, xml, binary, text, reportOne, reportTwo, reportThree,
+	private ButtonObject json, binary, text, reportOne, reportTwo, reportThree,
 	reportFour, reportFive, reportSix, reportSeven, reportEigth, reportNine, reportTen;
 	private JTable table;
 	private DefaultTableModel tableModel;
@@ -72,7 +72,6 @@ public class PanelExport extends JPanel{
 		center.add(scroll);
 		
 		south.add(json);
-		south.add(xml);
 		south.add(binary);
 		south.add(text);
 		
@@ -128,11 +127,6 @@ public class PanelExport extends JPanel{
 		json = new ButtonObject(HandlerLanguage.languageProperties.getProperty(Constants.BUTTON_JSON), Constants.DEFAULT_COLOR, rescaledJson,
 				controller, Commands.BUTTON_JSON.name(), Constants.DEFAULT_FONT);
 		
-		Image iconXml = new ImageIcon(getClass().getResource(Constants.PATH_ICON_XML)).getImage();
-		Icon rescaledXml = new ImageIcon(iconXml.getScaledInstance(sizeImage, sizeImage, Image.SCALE_SMOOTH));
-		xml = new ButtonObject(HandlerLanguage.languageProperties.getProperty(Constants.BUTTON_XML), Constants.DEFAULT_COLOR, rescaledXml,
-				controller, Commands.BUTTON_XML.name(), Constants.DEFAULT_FONT);
-		
 		Image iconBinary = new ImageIcon(getClass().getResource(Constants.PATH_ICON_BINARY)).getImage();
 		Icon rescaledBinary = new ImageIcon(iconBinary.getScaledInstance(sizeImage, sizeImage, Image.SCALE_SMOOTH));
 		binary = new ButtonObject(HandlerLanguage.languageProperties.getProperty(Constants.BUTTON_BINARY), Constants.DEFAULT_COLOR, rescaledBinary,
@@ -187,7 +181,6 @@ public class PanelExport extends JPanel{
 
 	public void changeLanguage() {
 		json.setText(HandlerLanguage.languageProperties.getProperty(Constants.BUTTON_JSON));
-		xml.setText(HandlerLanguage.languageProperties.getProperty(Constants.BUTTON_XML));
 		binary.setText(HandlerLanguage.languageProperties.getProperty(Constants.BUTTON_BINARY));
 		text.setText(HandlerLanguage.languageProperties.getProperty(Constants.BUTTON_TEXT));
 		reportOne.setText(HandlerLanguage.languageProperties.getProperty(Constants.BUTTON_REPORT_ONE));

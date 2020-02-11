@@ -16,7 +16,7 @@ public class ContainerNorth extends JPanel{
 	 */
 	private static final long serialVersionUID = 1L;
 	private PanelButtons buttons;
-	private PanelBannerSpanish banner;
+	private PanelBanner banner;
 
 	public ContainerNorth(Controller controller, int width, int height) {		
 		setLayout(new BorderLayout());
@@ -29,7 +29,7 @@ public class ContainerNorth extends JPanel{
 	}
 
 	private void initComponents(Controller controller, int width, int height) {
-		banner = new PanelBannerSpanish(width, height);
+		banner = new PanelBanner(width, height);
 		add(banner, BorderLayout.NORTH);
 		
 		buttons = new PanelButtons(controller, new BorderLayout(), Constants.DEFAULT_COLOR, width, height);

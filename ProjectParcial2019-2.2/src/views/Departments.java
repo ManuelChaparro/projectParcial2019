@@ -4,8 +4,6 @@ import java.awt.Color;
 
 import javax.swing.JComboBox;
 import javax.swing.border.EmptyBorder;
-
-import controller.Commands;
 import controller.Controller;
 
 public class Departments extends JComboBox<String> {
@@ -20,7 +18,6 @@ public class Departments extends JComboBox<String> {
 		setFont(Constants.DEFAULT_FONT_MIN);
 		setBackground(Constants.AQUA_COLOR);
 		addActionListener(controller);
-		setActionCommand(Commands.GET_ID_DEPARTMENT.name());
 		setBorder(new EmptyBorder(10, 10, 10, 10));
 		setForeground(Color.BLACK);
 	}

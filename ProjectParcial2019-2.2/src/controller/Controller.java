@@ -12,8 +12,9 @@ import java.util.ArrayList;
 
 import handler.HandlerLanguage;
 import models.Fruit;
-import models.PlaneFileManager;
+import persistence.*;
 import models.ReportManager;
+import persistence.BinarianFileManager;
 import models.Chain;
 import persistence.JsonFileManager;
 import utilities.Utilities;
@@ -21,11 +22,11 @@ import utilities.Utilities;
 public class Controller implements ActionListener {
 
 	private HandlerLanguage config;
+	private JsonFileManager jsonManager;
 	private PrincipalWindow window;
 	private ViewsUtilities viewsUtilities;
 	private Chain chain;
 	private String fruitSelected;
-	private PlaneFileManager textManager;
 	private int fruitDelete;
 	private ReportManager reportManager;
 	private URI uriFacebook, uriInstagram, uriYoutube;
@@ -34,12 +35,11 @@ public class Controller implements ActionListener {
 		config = null;
 		viewsUtilities = new ViewsUtilities();
 		chain = new Chain();
-		
+
 		loadPages();
-//		writeFile();
+		writeFile();
 		loadConfiguration();
 		initWindow();
-		
 		manageChangeLanguageES();
 
 	}
@@ -52,7 +52,7 @@ public class Controller implements ActionListener {
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	private void initWindow() {
@@ -280,23 +280,28 @@ public class Controller implements ActionListener {
 			break;
 		case REPORT_ONE:
 			window.setVisibleButtonsExport(true);
-			window.changeReport(reportManager.generateReportOfHectaresPerDepartament(window.getDepartment(true)), 1, true);
+			window.changeReport(reportManager.generateReportOfHectaresPerDepartament(window.getDepartment(true)), 1,
+					true);
 			break;
 		case REPORT_TWO:
 			window.setVisibleButtonsExport(false);
-			window.changeReport(reportManager.generateReportOfBeneficiariesPerDepartament(window.getDepartment(true)), 2, true);
+			window.changeReport(reportManager.generateReportOfBeneficiariesPerDepartament(window.getDepartment(true)),
+					2, true);
 			break;
 		case REPORT_THREE:
 			window.setVisibleButtonsExport(false);
-			window.changeReport(reportManager.generateReportOfInvestmentPerDepartament(window.getDepartment(true)), 3, true);
+			window.changeReport(reportManager.generateReportOfInvestmentPerDepartament(window.getDepartment(true)), 3,
+					true);
 			break;
 		case REPORT_FOUR:
 			window.setVisibleButtonsExport(false);
-			window.changeReport(reportManager.generateReportOfAetaricPerDepartament(window.getDepartment(true)), 4, true);
+			window.changeReport(reportManager.generateReportOfAetaricPerDepartament(window.getDepartment(true)), 4,
+					true);
 			break;
 		case REPORT_FIVE:
 			window.setVisibleButtonsExport(false);
-			window.changeReport(reportManager.generateReportOfGenderPerDepartament(window.getDepartment(true)), 4, true);
+			window.changeReport(reportManager.generateReportOfGenderPerDepartament(window.getDepartment(true)), 4,
+					true);
 			break;
 		case REPORT_SIX:
 			window.setVisibleButtonsExport(false);
@@ -319,19 +324,24 @@ public class Controller implements ActionListener {
 			window.changeReport(reportManager.generateReportOfNationalGender(), 8, false);
 			break;
 		case GRAPHIC_ONE:
-			window.createGraphic(reportManager.generateReportOfHectaresPerDepartament(window.getDepartment(false)), true);
+			window.createGraphic(reportManager.generateReportOfHectaresPerDepartament(window.getDepartment(false)),
+					true);
 			break;
 		case GRAPHIC_TWO:
-			window.createGraphic(reportManager.generateReportOfBeneficiariesPerDepartament(window.getDepartment(false)), true);
+			window.createGraphic(reportManager.generateReportOfBeneficiariesPerDepartament(window.getDepartment(false)),
+					true);
 			break;
 		case GRAPHIC_THREE:
-			window.createGraphic(reportManager.generateReportOfInvestmentPerDepartament(window.getDepartment(false)), true);
+			window.createGraphic(reportManager.generateReportOfInvestmentPerDepartament(window.getDepartment(false)),
+					true);
 			break;
 		case GRAPHIC_FOUR:
-			window.createGraphicBar(reportManager.generateReportOfAetaricPerDepartament(window.getDepartment(false)), true);
+			window.createGraphicBar(reportManager.generateReportOfAetaricPerDepartament(window.getDepartment(false)),
+					true);
 			break;
 		case GRAPHIC_FIVE:
-			window.createGraphicBar(reportManager.generateReportOfGenderPerDepartament(window.getDepartment(false)), true);
+			window.createGraphicBar(reportManager.generateReportOfGenderPerDepartament(window.getDepartment(false)),
+					true);
 			break;
 		case GRAPHIC_SIX:
 			window.createGraphic(reportManager.generateReportOfNationalHectares(), false);
@@ -349,19 +359,15 @@ public class Controller implements ActionListener {
 			window.createGraphicBar(reportManager.generateReportOfNationalGender(), false);
 			break;
 		case BUTTON_BINARY:
-			
+			new BinarianFileManager(Constants.PATH_EXPORT_BINARY, reportManager.getList());
 			break;
 		case BUTTON_JSON:
-			
+			jsonManager = new JsonFileManager();
+			jsonManager.writeFilehectares(Constants.PATH_EXPORT_JSON, reportManager.getList());
+			;
 			break;
 		case BUTTON_TEXT:
-			textManager = new PlaneFileManager(Constants.PATH_EXPORT_TEXT, reportManager.getList());
-			System.out.println(2);
-			break;
-		case BUTTON_XML:
-			
-			break;
-		default:
+			new PlaneFileManager(Constants.PATH_EXPORT_TEXT, reportManager.getList());
 			break;
 		}
 
@@ -405,7 +411,7 @@ public class Controller implements ActionListener {
 			int beneficiaries = Integer.parseInt((String) data[7]);
 			double investment = Double.parseDouble((String) data[8]);
 			double hectare = Double.parseDouble((String) data[9]);
-			
+
 			for (index = 0; index < fruitList.size(); index++) {
 				if (fruit.equalsIgnoreCase(fruitList.get(index).getName()) && idTown == fruitList.get(index).getIdTown()
 						&& fruitList.get(index).getGender().equalsIgnoreCase(gender)
@@ -437,7 +443,7 @@ public class Controller implements ActionListener {
 			e.printStackTrace();
 		}
 	}
-	
+
 	private void loadConfiguration() {
 		if (config == null) {
 			config = new HandlerLanguage(Constants.NAME_FILE_CONFIG);
@@ -498,7 +504,7 @@ public class Controller implements ActionListener {
 		} catch (Exception e) {
 		}
 	}
-	
+
 	private void open(URI uri) {
 		if (Desktop.isDesktopSupported()) {
 			try {

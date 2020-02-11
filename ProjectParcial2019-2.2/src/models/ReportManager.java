@@ -1,14 +1,13 @@
 package models;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Comparator;
 
 public class ReportManager {
-	
+
 	ArrayList<Fruit> localList;
-	
-	public ArrayList<Fruit> getList(){
+
+	public ArrayList<Fruit> getList() {
 		return localList;
 	}
 
@@ -133,7 +132,7 @@ public class ReportManager {
 		ArrayList<Fruit> fruitsPerDepartament = new ArrayList<Fruit>();
 		ArrayList<String> departamentList = new ArrayList<String>();
 		for (Fruit fruit : localList) {
-			if (isUniqueInList(departamentList,fruit.getDepartment())) {
+			if (isUniqueInList(departamentList, fruit.getDepartment())) {
 				departamentList.add(fruit.getDepartment());
 			}
 			if (fruit.getDepartment().equals(departament)) {
@@ -142,6 +141,7 @@ public class ReportManager {
 		}
 		return fruitsPerDepartament;
 	}
+
 	private boolean isUniqueInList(ArrayList<String> departamentsList, String departament) {
 		boolean isInList = true;
 		for (String string : departamentsList) {
@@ -174,7 +174,7 @@ public class ReportManager {
 		int aetaricCounter80ymas = 0;
 		int womanGroups = 0;
 		int menGroups = 0;
-		for (Fruit fruit : generalFruitList) {	
+		for (Fruit fruit : generalFruitList) {
 			if (fruit.getTown().equals(town)) {
 				hectare += fruit.getHectare();
 				beneficiaries += fruit.getBeneficiaries();
@@ -234,8 +234,8 @@ public class ReportManager {
 				beneficiaries = fruit.getBeneficiaries();
 				investment = fruit.getInvestment();
 				idTown = fruit.getIdTown();
-				Fruit fruitAux= new Fruit(fruit.getName(), fruit.getDepartment(), town, idTown, fruit.getGender(), fruit.getAgeGroup(),
-						beneficiaries, investment, hectare);
+				Fruit fruitAux = new Fruit(fruit.getName(), fruit.getDepartment(), town, idTown, fruit.getGender(),
+						fruit.getAgeGroup(), beneficiaries, investment, hectare);
 				fruitsByTown.add(fruitAux);
 				aetaricCounter25to29 = 0;
 				aetaricCounter30to34 = 0;
@@ -255,8 +255,6 @@ public class ReportManager {
 		}
 		return fruitsByTown;
 	}
-	
-
 
 	public ArrayList<Fruit> crateFruitsByDepartamentArray(ArrayList<Fruit> generalFruitList) {
 		ArrayList<Fruit> fruitsByTown = new ArrayList<Fruit>();
@@ -364,9 +362,9 @@ public class ReportManager {
 		String result = "";
 		if (womansGroup >= mensGroup)
 			result = "MUJERES";
-		if(womansGroup < mensGroup)
+		if (womansGroup < mensGroup)
 			result = "HOMBRES";
-		
+
 		return result;
 	}
 
@@ -424,22 +422,6 @@ public class ReportManager {
 		return result;
 	}
 
-	public String[] generateVectorByMatrix(String[][] matrix, int pos) {
-		String[] newVector = new String[matrix.length];
-		for (int i = 0; i < matrix.length; i++) {
-			newVector[i] = matrix[i][pos];
-		}
-		return newVector;
-	}
-
-	public String[] generateVectorHead(String[][] matrix) {
-		return generateVectorByMatrix(matrix, 0);
-	}
-
-	public String[] generateVectorQueue(String[][] matrix) {
-		return generateVectorByMatrix(matrix, 1);
-	}
-	
 	public void setFruit(Fruit fruit) {
 		localList.add(fruit);
 	}

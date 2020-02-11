@@ -1,13 +1,22 @@
 package persistence;
 
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
 
 import org.json.simple.JsonArray;
 import org.json.simple.JsonObject;
 import org.json.simple.Jsoner;
 
+import models.Fruit;
+
 public class JsonFileManager {
 	
+	public JsonFileManager() {
+	}
+
 	public static Object[][] readFile(String url) {
 		Object[][] allData = null;
 		JsonObject jsonArrayData;
@@ -35,6 +44,31 @@ public class JsonFileManager {
 		}
 		return allData;
 	}
+
+	public void writeFilehectares(String path, ArrayList<Fruit> Fruits) {
+		try {
+			File file = new File(path);
+			file.createNewFile();
+			FileWriter fileWriter = new FileWriter(file);
+			JsonArray fruitsArray = new JsonArray();
+			JsonObject jsonObjectFruits = new JsonObject();
+			JsonObject jsonObjectFruitsContent = new JsonObject();
+			for (Fruit fruit : Fruits) {
+				JsonObject jsonObjectFruit = new JsonObject();
+				jsonObjectFruit.put("Town", fruit.getTown());
+				jsonObjectFruit.put("Heactares", fruit.getHectare());
+				fruitsArray.add(jsonObjectFruit);
+			}
+			jsonObjectFruits.put("Frutas", fruitsArray);
+			jsonObjectFruitsContent.put("fruits_content", jsonObjectFruits);
+			fileWriter.write(jsonObjectFruitsContent.toJson());
+			fileWriter.flush();
+			fileWriter.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 	
+
 
 }

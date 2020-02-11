@@ -6,18 +6,17 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
-
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
-public class PanelBannerEnglish extends JPanel{
+public class PanelBanner extends JPanel{
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public PanelBannerEnglish(int width, int height) {
+	public PanelBanner(int width, int height) {
 		setPreferredSize(new Dimension((int) (width*0.8), (int) (height*0.34)));
 		setLayout(new BorderLayout());
 		setBackground(Color.YELLOW);
