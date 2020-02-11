@@ -1,5 +1,6 @@
 package models;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -7,8 +8,8 @@ public class ReportManager {
 	
 	ArrayList<Fruit> localList;
 	
-	public int size() {
-		return localList.size();
+	public ArrayList<Fruit> getList(){
+		return localList;
 	}
 
 	public ReportManager(ArrayList<Fruit> fruitList) {

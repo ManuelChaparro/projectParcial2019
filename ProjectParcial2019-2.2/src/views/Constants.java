@@ -115,6 +115,10 @@ public class Constants {
 	public static final String PATH_LOCAL_FILE_BANANA = "resource/banana.INFO";
 	public static final String PATH_LOCAL_FILE_PASSION_FRUIT = "resource/passion_fruit.INFO";
 	public static final String PATH_LOCAL_FILE_PEACH = "resource/peach.INFO";
+	public static final String PATH_EXPORT_JSON = "resource/exportJson.INFO";
+	public static final String PATH_EXPORT_XML = "resource/exportXML.INFO";
+	public static final String PATH_EXPORT_TEXT = "resource/exportText.INFO";
+	public static final String PATH_EXPORT_BINARY = "resource/exportBinary.INFO";
 	public static final String PATH_IMAGE_BLACKBERRY = "/resource/iconBlackberry.png";
 	public static final String PATH_IMAGE_STRAWBERRY = "/resource/iconStrawberry.png";
 	public static final String PATH_IMAGE_LULO = "/resource/iconLulo.png";

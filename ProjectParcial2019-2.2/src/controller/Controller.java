@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 import handler.HandlerLanguage;
 import models.Fruit;
+import models.PlaneFileManager;
 import models.ReportManager;
 import models.Chain;
 import persistence.JsonFileManager;
@@ -24,6 +25,7 @@ public class Controller implements ActionListener {
 	private ViewsUtilities viewsUtilities;
 	private Chain chain;
 	private String fruitSelected;
+	private PlaneFileManager textManager;
 	private int fruitDelete;
 	private ReportManager reportManager;
 	private URI uriFacebook, uriInstagram, uriYoutube;
@@ -34,9 +36,10 @@ public class Controller implements ActionListener {
 		chain = new Chain();
 		
 		loadPages();
-		writeFile();
+//		writeFile();
 		loadConfiguration();
 		initWindow();
+		
 		manageChangeLanguageES();
 
 	}
@@ -344,6 +347,19 @@ public class Controller implements ActionListener {
 			break;
 		case GRAPHIC_TEN:
 			window.createGraphicBar(reportManager.generateReportOfNationalGender(), false);
+			break;
+		case BUTTON_BINARY:
+			
+			break;
+		case BUTTON_JSON:
+			
+			break;
+		case BUTTON_TEXT:
+			textManager = new PlaneFileManager(Constants.PATH_EXPORT_TEXT, reportManager.getList());
+			System.out.println(2);
+			break;
+		case BUTTON_XML:
+			
 			break;
 		default:
 			break;
